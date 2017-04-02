@@ -1,0 +1,78 @@
+/* --- WIDTHS --- */
+/* --- MEDIA QUERIES--- */
+/*  --- COLORS --- */
+/* $text-brown: #444;
+$text-active-gray: #c7c7c7;
+$footer-gray: #f1f1f1;
+ */
+/*---------FONTS----------------------*/
+/* @font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-It.otf") format("opentype");
+  font-weight: italic;
+  font-style: normal; 
+}
+ */
+/* -------TAGS-------------------------- */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'MyriadPro', 'Arial', sans-serif;
+  background-color: #fff; }
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+h1, h2, h3, h4,
+p, dl, dt, dd,
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+button,
+button:hover,
+button:active {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: inherit;
+  border: none;
+  outline: none; }
+
+input,
+input:hover,
+input:active,
+select,
+select:hover,
+select:active {
+  outline: none; }
+
+/* @import 'blocks/page-wrapper.scss';
+@import 'blocks/header.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/breadcrumbs.scss';
+@import 'blocks/good.scss';
+@import 'blocks/carousel.scss';
+@import 'blocks/connections.scss';
+@import 'blocks/footer.scss'; */
