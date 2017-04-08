@@ -1,0 +1,19 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:419px;
+  background: url("../img/promo_bg_mobile@1x.jpg");
+}
+
+.promo__header {
+  text-align: center;
+  color: $promo-header;
+}
+
+@media #{$media-desktop-width} {
+  .promo {
+    min-height:699px;
+    background: url("../img/promo_bg@1x.jpg");
+  }
+}
