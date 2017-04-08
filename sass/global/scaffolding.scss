@@ -1,25 +1,31 @@
 /*---------FONTS----------------------*/
-/* @font-face {
-  font-family: "MyriadPro";
-  src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Light.ttf') format('ttf');
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "MyriadPro";
-  src: url("../fonts/MyriadPro-Bold.otf") format("opentype");
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Semibold.ttf') format('ttf');
   font-weight: bold;
-  font-style: normal; 
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "MyriadPro";
-  src: url("../fonts/MyriadPro-It.otf") format("opentype");
-  font-weight: italic;
-  font-style: normal; 
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
 }
- */
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-SemiboldItalic.ttf') format('ttf');
+  font-weight: bold;
+  font-style: italic;
+}
 /* -------TAGS-------------------------- */
 * {
   box-sizing: border-box;
@@ -28,17 +34,18 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'MyriadPro', 'Arial', sans-serif;
-  background-color: #fff;
+  position: relative;
+  font-family: 'OpenSans', 'Arial', sans-serif;
+  background-color: #f9f9f9;
 }
 
-a,
+/*a,
 a:hover,
 a:active,
 a:visited {
   text-decoration: none;
   color: inherit;
-}
+}*/
 
 h1, h2, h3, h4,
 p, dl, dt, dd,
@@ -67,3 +74,6 @@ select:active {
   outline: none;
 }
 
+.hide {
+  display: none;
+}

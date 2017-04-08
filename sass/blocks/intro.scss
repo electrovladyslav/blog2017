@@ -1,0 +1,18 @@
+.intro {
+  margin-top: 50px;
+  margin-bottom:50px;
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
+  text-align: center;
+}
+
+.intro__header {
+  margin-bottom: 20px;
+}
+
+@media #{$media-desktop-width} {
+  .intro {
+    margin-left: $desktop-margin + $desktop-text-margin;
+    margin-right: $desktop-margin + $desktop-text-margin;
+  }
+}
