@@ -10,9 +10,7 @@
 <body>
 <div class="page-wrapper">
   <header class="header hide">
-    <a href="#" class="logo">
-      <img src="img/main-logo.png" alt="logo" width="190" height="42">
-    </a>
+    <a href="#" class="logo"></a>
     <nav class="main-nav"></nav>
   </header>
 
@@ -23,15 +21,19 @@
 
     <div class="intro">
       <h2 class="intro__header">Привет!</h2>
-      <p class="intro__text">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, здесь только онлайн-карта, чтобы мои родные всегда могли посмотреть, где я сейчас нахожусь. Буду добавлять контент по мере его производства.</p>
+      <p class="intro__text">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, здесь только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход. Буду добавлять контент по мере его производства.</p>
     </div>
 
     <div class="map">
 
-      <script src="js/map.js"></script>
-      <script src="https://www.vesselfinder.com/aismap.js">
-      </script>
+     <!--Vesselfinder map-->
+      <!--<script src="js/map-vesselfinder.js"></script>-->
+      <!--<script src="https://www.vesselfinder.com/aismap.js"></script>-->
 
+     <!--Marine traffic map-->
+     <script src="js/map-marinetraffic.js"></script>
+      <!--<script src="js/marinetraffic-embedmap.js"></script>-->
+      <script type="text/javascript" src="//www.marinetraffic.com/js/embed.js"></script>
     </div>
 
     <div class="schedulle hide">

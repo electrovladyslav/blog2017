@@ -7,14 +7,14 @@ $footer-gray: #f1f1f1;
  */
 /*---------FONTS----------------------*/
 @font-face {
-  font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Light.ttf") format("ttf");
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Light.ttf") format("ttf"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url("../fonts/OpenSans-Semibold.ttf") format("ttf");
+  src: url("../fonts/OpenSans-Semibold.ttf") format("ttf"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbpld.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
@@ -38,7 +38,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: OpenSans;
   background-color: #f9f9f9; }
 
 /*a,
@@ -118,15 +118,22 @@ select:active {
 
 .promo__header {
   text-align: center;
+  font-size: 40px;
+  line-height: 60px;
   color: #fff; }
 
 @media (min-width: 1180px) {
   .promo {
     min-height: 699px;
-    background: url("../img/promo_bg@1x.jpg"); } }
+    background: url("../img/promo_bg@1x.jpg"); }
+  .promo__header {
+    font-size: 60px;
+    line-height: 90px; } }
 
 .map {
-  min-height: 350px;
+  min-height: 350px; }
+
+.map__embed {
   background-color: #b5cfed; }
 
 .footer {
