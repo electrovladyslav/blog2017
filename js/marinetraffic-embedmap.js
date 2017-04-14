@@ -1,13 +1,13 @@
 (function() {
 
-  if ("https:" == document.location.protocol) {
-    /* secure */
+  /*if ("https:" == document.location.protocol) {
+    /!* secure *!/
     var src = 'https://www.marinetraffic.com/';
   } else {
-    /* unsecure */
+    /!* unsecure *!/
     var src = 'http://www.marinetraffic.com/';
-  }
-
+  }*/
+  var src = 'https://www.marinetraffic.com/';
   if ((window.latitude === undefined) && (window.longitude === undefined) && ( (window.fleet !== undefined && window.fleet != "") || (window.fleet_id !== undefined && window.fleet_id != ""))) {
     window.latitude = 0;
     window.longitude = 0;
