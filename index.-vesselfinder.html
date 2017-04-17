@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electrovlad's Blog</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="page-wrapper">
+  <header class="header hide">
+    <a href="#" class="logo"></a>
+    <nav class="main-nav"></nav>
+  </header>
+
+  <main class="main">
+    <div class="promo">
+      <h1 class="promo__header">Hello, I'm Vlad and that is my blog!</h1>
+    </div>
+
+    <div class="intro">
+      <h2 class="intro__header">Привет!</h2>
+      <p class="intro__text">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, здесь только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход. Буду добавлять контент по мере его производства.</p>
+    </div>
+
+    <div class="map">
+
+     <!--Vesselfinder map-->
+      <script src="js/map-vesselfinder.js"></script>
+      <script src="https://www.vesselfinder.com/aismap.js"></script>
+
+     <!--Marine traffic map-->
+     <!--<script src="js/map-marinetraffic.js"></script>-->
+      <!--<script src="js/marinetraffic-embedmap.js"></script>-->
+      <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
+    </div>
+
+    <div class="schedulle hide">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th>
+            <span class="lang lang-ru">Порт</span>
+            <span class="lang lang-en hide">Port</span>
+          </th>
+          <th>
+            <span class="lang lang-ru">Страна</span>
+            <span class="lang lang-en hide">Country</span>
+          </th>
+          <th>
+            <span class="lang lang-ru">Заход</span>
+            <span class="lang lang-en hide">Arrival</span>
+          </th>
+          <th>
+            <span class="lang lang-ru">Отход</span>
+            <span class="lang lang-en hide">Departure</span>
+          </th>
+        </tr>
+        </thead>
+
+        <tbody class="schedule-body">
+        <tr>
+          <td>&nbsp;</td>
+          <td class="port">
+            <span class="lang lang-ru">Какой-то порт</span>
+            <span class="lang lang-en hide">Some port</span>
+          </td>
+          <td class="country">
+            <span class="lang lang-ru">Китай</span>
+            <span class="lang lang-en hide">China</span>
+          </td>
+          <td class="arrival">
+            <time datetime="2016-11-15">
+              <span class="lang lang-ru">15 Ноября</span>
+              <span class="lang lang-en hide">15 of November</span>
+            </time>
+          </td>
+          <td class="departure">
+            <time datetime="2016-11-25">
+              <span class="lang lang-ru">25 Ноября</span>
+              <span class="lang lang-en hide">25 of November</span>
+            </time>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="singnoff">
+            &nbsp;
+											<span class="label label-primary label-sm">
+												<span class="lang lang-ru">я улетел домой</span>
+												<span class="lang lang-en hide">my sign-off port</span>
+											</span>
+          </td>
+          <td class="port">
+            <span class="lang lang-ru">Сан Николас</span>
+            <span class="lang lang-en hide">San Nicolas</span>
+          </td>
+          <td class="country">
+            <span class="lang lang-ru">Аргентина</span>
+            <span class="lang lang-en hide">Argentina</span>
+          </td>
+          <td class="arrival">
+            <time datetime="2016-10-01">
+              <span class="lang lang-ru">1 Октября</span>
+              <span class="lang lang-en hide">1 of October</span>
+            </time>
+          </td>
+          <td class="departure">
+            <time datetime="2016-10-05">
+              <span class="lang lang-ru">5 Октября</span>
+              <span class="lang lang-en hide">5 of October</span>
+            </time>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__madeby"><a href="http://vk.com/feed" title="VK">Ермолин Владислав</a>, 2017.</p>
+    <p class="footer__mail">Email: <a href="mailto:electrovladyslav@gmail.com">electrovladyslav@gmail.com</a></p>
+  </footer>
+
+
+
+
+</div>
+</body>
+</html>

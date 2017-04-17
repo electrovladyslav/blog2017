@@ -5,3 +5,5 @@ node_modules/
 *.doc
 Thumbs.db
 layout/
+build/
+.publish/

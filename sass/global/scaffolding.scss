@@ -1,28 +1,28 @@
 /*---------FONTS----------------------*/
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Light.ttf') format('ttf');
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Semibold.ttf') format('ttf');
+  src: url('../fonts/OpenSans-Semibold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-LightItalic.ttf') format('ttf');
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-SemiboldItalic.ttf') format('ttf');
+  src: url('../fonts/OpenSans-SemiboldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -35,17 +35,25 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: 'OpenSans';
+  font-size: 29px;
+  line-height: 52px;
   background-color: #f9f9f9;
 }
 
-/*a,
+@media #{$media-desktop-width} {
+  body {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+a,
 a:hover,
 a:active,
 a:visited {
   text-decoration: none;
   color: inherit;
-}*/
+}
 
 h1, h2, h3, h4,
 p, dl, dt, dd,
@@ -74,6 +82,6 @@ select:active {
   outline: none;
 }
 
-.hide {
+.hidden {
   display: none;
 }

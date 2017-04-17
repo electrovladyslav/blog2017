@@ -8,6 +8,9 @@
 
 .promo__header {
   text-align: center;
+  font-size: 95px;
+  line-height: 140px;
+  font-weight: 200;
   color: $promo-header;
 }
 
@@ -15,5 +18,10 @@
   .promo {
     min-height:699px;
     background: url("../img/promo_bg@1x.jpg");
+  }
+
+  .promo__header {
+    font-size: 80px;
+    line-height: 60px;
   }
 }

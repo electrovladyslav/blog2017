@@ -6,54 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Electrovlad's Blog</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
 <div class="page-wrapper">
-  <header class="header hide">
-    <a href="#" class="logo">
-      <img src="img/main-logo.png" alt="logo" width="190" height="42">
-    </a>
+  <header class="header hidden">
+    <a href="#" class="logo"></a>
     <nav class="main-nav"></nav>
   </header>
 
   <main class="main">
     <div class="promo">
-      <h1 class="promo__header">Hello, I'm Vlad and that is my blog!</h1>
+      <h1 class="promo__header">
+        <span class="lang lang-ru">Я - Влад, и это мой блог!</span>
+        <span class="lang lang-en hidden">I'm Vlad and that is my blog!</span>
+      </h1>
     </div>
 
     <div class="intro">
-      <h2 class="intro__header">Привет!</h2>
-      <p class="intro__text">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, здесь только онлайн-карта, чтобы мои родные всегда могли посмотреть, где я сейчас нахожусь. Буду добавлять контент по мере его производства.</p>
+      <h2 class="intro__header">
+        <span class="lang lang-ru">Привет!</span>
+        <span class="lang lang-en hidden">Hello!</span>
+      </h2>
+      <p class="intro__text">
+        <span class="lang lang-ru">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, на этом сайте только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход. Буду добавлять контент по мере его производства.
+        </span>
+        <span class="lang lang-en hidden">I'm working as Electrical Technical Officer on vessel "Miami trader" now. At he present moment, on this site only on-line map for my relations. I will add a content, when it be ready. </span>
+      </p>
     </div>
 
     <div class="map">
 
-      <script src="js/map.js"></script>
-      <script src="https://www.vesselfinder.com/aismap.js">
-      </script>
+     <!--Vesselfinder map-->
+      <!--<script src="js/map-vesselfinder.js"></script>-->
+      <!--<script src="https://www.vesselfinder.com/aismap.js"></script>-->
 
+     <!--Marine traffic map-->
+     <script src="js/map-marinetraffic.js"></script>
+     <script src="js/marinetraffic-embedmap.js"></script>
+     <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
     </div>
 
-    <div class="schedulle hide">
+    <div class="schedule hidden">
       <table class="table table-striped">
         <thead>
         <tr>
           <th>&nbsp;</th>
           <th>
             <span class="lang lang-ru">Порт</span>
-            <span class="lang lang-en hide">Port</span>
+            <span class="lang lang-en hidden">Port</span>
           </th>
           <th>
             <span class="lang lang-ru">Страна</span>
-            <span class="lang lang-en hide">Country</span>
+            <span class="lang lang-en hidden">Country</span>
           </th>
           <th>
             <span class="lang lang-ru">Заход</span>
-            <span class="lang lang-en hide">Arrival</span>
+            <span class="lang lang-en hidden">Arrival</span>
           </th>
           <th>
             <span class="lang lang-ru">Отход</span>
-            <span class="lang lang-en hide">Departure</span>
+            <span class="lang lang-en hidden">Departure</span>
           </th>
         </tr>
         </thead>
@@ -63,22 +76,22 @@
           <td>&nbsp;</td>
           <td class="port">
             <span class="lang lang-ru">Какой-то порт</span>
-            <span class="lang lang-en hide">Some port</span>
+            <span class="lang lang-en hidden">Some port</span>
           </td>
           <td class="country">
             <span class="lang lang-ru">Китай</span>
-            <span class="lang lang-en hide">China</span>
+            <span class="lang lang-en hidden">China</span>
           </td>
           <td class="arrival">
             <time datetime="2016-11-15">
               <span class="lang lang-ru">15 Ноября</span>
-              <span class="lang lang-en hide">15 of November</span>
+              <span class="lang lang-en hidden">15 of November</span>
             </time>
           </td>
           <td class="departure">
             <time datetime="2016-11-25">
               <span class="lang lang-ru">25 Ноября</span>
-              <span class="lang lang-en hide">25 of November</span>
+              <span class="lang lang-en hidden">25 of November</span>
             </time>
           </td>
         </tr>
@@ -88,27 +101,27 @@
             &nbsp;
 											<span class="label label-primary label-sm">
 												<span class="lang lang-ru">я улетел домой</span>
-												<span class="lang lang-en hide">my sign-off port</span>
+												<span class="lang lang-en hidden">my sign-off port</span>
 											</span>
           </td>
           <td class="port">
             <span class="lang lang-ru">Сан Николас</span>
-            <span class="lang lang-en hide">San Nicolas</span>
+            <span class="lang lang-en hidden">San Nicolas</span>
           </td>
           <td class="country">
             <span class="lang lang-ru">Аргентина</span>
-            <span class="lang lang-en hide">Argentina</span>
+            <span class="lang lang-en hidden">Argentina</span>
           </td>
           <td class="arrival">
             <time datetime="2016-10-01">
               <span class="lang lang-ru">1 Октября</span>
-              <span class="lang lang-en hide">1 of October</span>
+              <span class="lang lang-en hidden">1 of October</span>
             </time>
           </td>
           <td class="departure">
             <time datetime="2016-10-05">
               <span class="lang lang-ru">5 Октября</span>
-              <span class="lang lang-en hide">5 of October</span>
+              <span class="lang lang-en hidden">5 of October</span>
             </time>
           </td>
         </tr>
@@ -117,11 +130,24 @@
 
 
     </div>
+
+    <div class="blogposts-container hidden">
+      <div class="blogpost blogpost--preview">
+        <article class="blogpost">
+          <h2 class="blogpost__header">А кто такие фиксики? Большой большой секрет!</h2>
+
+        </article>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
-    <p class="footer__madeby"><a href="http://vk.com/feed" title="VK">Ермолин Владислав</a>, 2017.</p>
-    <p class="footer__mail">Email: <a href="mailto:electrovladyslav@gmail.com">electrovladyslav@gmail.com</a></p>
+    <p class="footer__produced">
+      <a href="http://vk.com/feed" title="VK">
+        <span class="lang lang-ru">Ермолин Владислав</span>
+        <span class="lang lang-en hidden">Yermolin Vlad</span>
+      </a>, 2017.</p>
+    <p class="footer__mail">Email: <a href="mailto:electrovladyslav@gmail.com">electrovladyslav@gmail.com</a>.</p>
   </footer>
 
 

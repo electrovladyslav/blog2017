@@ -8,6 +8,13 @@
 
 .intro__header {
   margin-bottom: 20px;
+  font-size: 90px;
+  line-height: 92px;
+}
+
+.intro__text {
+  font-size: 29px;
+  line-height: 52px;
 }
 
 @media #{$media-desktop-width} {
@@ -15,4 +22,16 @@
     margin-left: $desktop-margin + $desktop-text-margin;
     margin-right: $desktop-margin + $desktop-text-margin;
   }
-}
+
+  .intro__header {
+    font-size: 44px;
+    line-height: 60px;
+    color: $intro-header;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    line-height: 32px;
+    color: $footer-text;
+  }
+  }
