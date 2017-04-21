@@ -123,6 +123,10 @@ select:active {
   font-size: 29px;
   line-height: 52px; }
 
+.intro__text-pic {
+  dispaly: inline-block;
+  vertical-align: baseline; }
+
 @media (min-width: 1180px) {
   .intro {
     margin-left: 260px;

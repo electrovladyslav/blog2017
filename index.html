@@ -28,23 +28,43 @@
         <span class="lang lang-ru">Привет!</span>
         <span class="lang lang-en hidden">Hello!</span>
       </h2>
-      <p class="intro__text">
-        <span class="lang lang-ru">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, на этом сайте только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход. Буду добавлять контент по мере его производства.
-        </span>
-        <span class="lang lang-en hidden">I'm working as Electrical Technical Officer on vessel "Miami trader" now. At he present moment, on this site only on-line map for my relations. I will add a content, when it be ready. </span>
-      </p>
+      <div class="intro__text">
+        <p class="intro__text-paragraph">
+          <span class="lang lang-ru">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, на этом сайте только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход.
+          </span>
+          <span class="lang lang-en hidden">I'm working as Electrical Technical Officer on vessel "Miami trader" now. At he present moment, on this site only on-line map for my relations. I will add a content, when it be ready.
+          </span>
+        </p>
+      </div>
     </div>
-
     <div class="map">
 
      <!--Vesselfinder map-->
-      <!--<script src="js/map-vesselfinder.js"></script>-->
-      <!--<script src="https://www.vesselfinder.com/aismap.js"></script>-->
+      <script src="js/map-vesselfinder.js"></script>
+      <script src="https://www.vesselfinder.com/aismap.js"></script>
 
+      <!--TODO добавить английский-->
+      <div class="map__definition hidden">
+        <img class="map__popup-pic" src="img/vesselstraffic_popup.jpg" alt="update date">
+        <span class="lang lang-ru">Что у нас здесь есть?</span>
+        <dl class="map__popup-definition">
+          <dt class="map__popup-term">Next port</dt>
+          <dd class="intro__definition-descr">Следующий порт</dd>
+          <dt class="map__popup-term">ETA</dt>
+          <dd class="intro__definition-descr"><i>Estimated Time of Arrival</i> приблизительная дата прихода в следующий порт (см. выше)</dd>
+          <dt class="map__popup-term">IMO</dt>
+          <dd class="intro__definition-descr"><i>International Maritime Organization</i> международный номер судна</dd>
+          <dt class="map__popup-term">Speed</dt>
+          <dd class="intro__definition-descr">Скорость судна в узлах (knots). 1 узел = 1 морская миля (1.852 км) в час. Соответственно 14.9 узлов = 27.5 км/ч. Нормальная, кстати, для парохода скорость.</dd>
+          <dt class="map__popup-term">APR 20, 2017 14:25 UTC</dt>
+          <dd class="map__popup-descr">Дата, и время, когда данные о положении судна были получены. Если эта дата сильно отстаёт от сегодняшней, может быть, что кораблик давно уплыл)</dd>
+        </dl>
+        </p>
+      </div>
      <!--Marine traffic map-->
-     <script src="js/map-marinetraffic.js"></script>
+     <!--<script src="js/map-marinetraffic.js"></script>-->
      <!--<script src="js/marinetraffic-embedmap.js"></script>-->
-     <script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>
+     <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
     </div>
 
     <div class="schedule hidden">
