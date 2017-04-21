@@ -1,6 +1,6 @@
 var width="100%";
 var height="400";
-var zoom="5";
+var zoom="5";  //between 3 and 17
 var imo="9251846";
 var show_track=true;
 var fleet="ffaceb1fd7fe2e73b9e245d9fa06f522";
