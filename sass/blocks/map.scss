@@ -2,6 +2,65 @@
   min-height:350px;
 }
 
-.map__embed {
-  background-color: #b5cfed;
+.map__definition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom:30px;
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
+  font-size: 29px;
+  line-height: 52px;
+  color: $footer-text;
+}
+
+.map__definition-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 92px;
+  color: $intro-header;
+}
+
+.map__popup-pic {
+  width: 499px;
+  height: 269px;
+}
+
+.map__definition-term {
+  text-align: left;
+  font-weight: bold;
+}
+
+.map__definition-descr {
+  text-align: left;
+  padding-left: 50px;
+}
+.map__definition-term {
+  color: #8ca3aa;
+}
+
+.map__definition-term--red {
+  color: #d41c1f;
+}
+
+@media #{$media-desktop-width} {
+  .map__definition {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .map__definition-header {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+
+  .map__popup-definition {
+    width: 55%;
+    margin-right: auto;
+  }
 }

@@ -10,11 +10,19 @@
   margin-bottom: 20px;
   font-size: 90px;
   line-height: 92px;
+  color: $intro-header;
+
 }
 
 .intro__text {
   font-size: 29px;
   line-height: 52px;
+  color: $footer-text;
+}
+
+.intro__text-pic {
+  dispaly: inline-block;
+  vertical-align: baseline;
 }
 
 @media #{$media-desktop-width} {
@@ -26,12 +34,10 @@
   .intro__header {
     font-size: 44px;
     line-height: 60px;
-    color: $intro-header;
   }
 
   .intro__text {
     font-size: 18px;
     line-height: 32px;
-    color: $footer-text;
   }
   }

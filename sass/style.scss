@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
 @import 'global/scaffolding.scss';
+@import 'global/btn.scss';
 
 //COMMON
 @import 'blocks/page-wrapper.scss';
@@ -8,6 +9,8 @@
 @import 'blocks/intro.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/map.scss';
+@import 'blocks/blogposts-container.scss';
+@import 'blocks/blogpost.scss';
 @import 'blocks/footer.scss';
 /*@import 'blocks/main-nav.scss';
 @import 'blocks/breadcrumbs.scss';

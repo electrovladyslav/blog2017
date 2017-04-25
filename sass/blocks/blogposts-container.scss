@@ -1,0 +1,25 @@
+.blogposts-container {
+  margin-top: 50px;
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
+  margin-bottom: 50px;
+  color: $blog-text;
+}
+
+.blogposts-container__header {
+  font-size: 90px;
+  line-height: 92px;
+  text-align: center;
+}
+
+@media #{$media-desktop-width} {
+  .blogposts-container {
+    margin-left: $desktop-margin + $desktop-text-margin;
+    margin-right: $desktop-margin + $desktop-text-margin;
+  }
+
+  .blogposts-container__header {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}

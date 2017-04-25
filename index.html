@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <!--, initial-scale=1-->
+  <meta property="og:image" content="img/vesselstraffic_popup.jpg">
+  <meta name="description" content="Влада блог">
   <title>Electrovlad's Blog</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -28,23 +31,52 @@
         <span class="lang lang-ru">Привет!</span>
         <span class="lang lang-en hidden">Hello!</span>
       </h2>
-      <p class="intro__text">
-        <span class="lang lang-ru">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, на этом сайте только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход. Буду добавлять контент по мере его производства.
-        </span>
-        <span class="lang lang-en hidden">I'm working as Electrical Technical Officer on vessel "Miami trader" now. At he present moment, on this site only on-line map for my relations. I will add a content, when it be ready. </span>
-      </p>
+      <div class="intro__text">
+        <p class="intro__text-paragraph">
+          <span class="lang lang-ru">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, на этом сайте только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход.
+          </span>
+          <span class="lang lang-en hidden">I'm working as Electrical Technical Officer on vessel "Miami trader" now. At he present moment, on this site only on-line map for my relations. I will add a content, when it be ready.
+          </span>
+        </p>
+      </div>
     </div>
-
     <div class="map">
 
      <!--Vesselfinder map-->
-      <!--<script src="js/map-vesselfinder.js"></script>-->
-      <!--<script src="https://www.vesselfinder.com/aismap.js"></script>-->
+      <script src="js/map-vesselfinder.js"></script>
+      <script src="https://www.vesselfinder.com/aismap.js"></script>
+      <!--TODO временная заглушка-->
+      <!--<script src="js/vesselfinder-aismap.js"></script>-->
+      <!--TODO добавить английский-->
+      <div class="map__definition ">
+        <h2 class="map__definition-header">
+          <span class="lang lang-ru">Что у нас здесь есть?</span>
+          <span class="lang lang-en hidden">What is that</span>
+        </h2>
+        <img class="map__popup-pic" src="img/vesselstraffic_popup.jpg" alt="update date">
 
+        <dl class="map__popup-definition">
+          <dt class="map__definition-term">Next port</dt>
+          <dd class="map__definition-descr">Следующий порт</dd>
+
+          <dt class="map__definition-term">ETA</dt>
+          <dd class="map__definition-descr"><i>Estimated Time of Arrival</i> приблизительная дата прихода в следующий порт (см. выше)</dd>
+
+          <dt class="map__definition-term">IMO</dt>
+          <dd class="map__definition-descr"><i>International Maritime Organization</i> международный номер судна</dd>
+
+          <dt class="map__definition-term">Speed</dt>
+          <dd class="map__definition-descr">Скорость судна в узлах (knots). 1 узел = 1 морская миля (1.852 км) в час. Соответственно 14.9 узлов = 27.5 км/ч. Нормальная, кстати, для парохода скорость.</dd>
+
+          <dt class="map__definition-term map__definition-term--red">APR 20, 2017 14:25 UTC</dt>
+          <dd class="map__definition-descr">Дата, и время, когда данные о положении судна были получены. Если эта дата сильно отстаёт от сегодняшней, может быть, что кораблик давно уплыл). Именно поэтому, ещё одна карта - более достоверная.</dd>
+        </dl>
+        </p>
+      </div>
      <!--Marine traffic map-->
      <script src="js/map-marinetraffic.js"></script>
-     <!--<script src="js/marinetraffic-embedmap.js"></script>-->
-     <script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>
+     <script src="js/marinetraffic-embedmap.js"></script>
+     <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
     </div>
 
     <div class="schedule hidden">
@@ -132,14 +164,27 @@
     </div>
 
     <div class="blogposts-container hidden">
-      <div class="blogpost blogpost--preview">
-        <article class="blogpost">
-          <h2 class="blogpost__header">А кто такие фиксики? Большой большой секрет!</h2>
+      <h2 class="blogposts-container__header">
+        <span class="lang lang-ru">Блог</span>
+        <span class="lang lang-en hidden">Blog</span>
+      </h2>
 
-          div.blogpost__body>img.blogpost__img.blogpost__img-m-main+p
-
-        </article>
-      </div>
+      <article class="blogpost">
+        <img src="img/fixiks_400x400.jpg" alt="Fixiks" class="blogpost__img blogpost__img--main">
+        <div class="blogpost__body">
+          <div class="blogpost__date">
+            <span class="lang lang-ru">20 Апреля 2017</span>
+            <span class="lang lang-en hidden">20 April 2017</span>
+          </div>
+          <h3 class="blogpost__header blogpost__header--long">А кто такие фиксики? Большой большой секрет!</h3>
+          <p class="blogpost_text">Я заметил, что моряки, особенно те, кто работает в машинном отделении, очень похожи на фиксиков...
+            <!--Как всем известно, "...они чинят изнутри утюги, моторы, телефоны, мр3, прочие приборы". Задача машинной команды такая же - поддерживать все устройства на борту судна в рабочем состоянии. Я, как электромеханик отвечаю за всю эелектрическую составляющую.  У нас даже свой Дедус есть. Ещё со времён советского флота, старший механик - капитан машинного отделения, по сути - называется дедом. И всё-равно 60 лет ему или 30, он всё равно дед.--></p>
+          <a href="#" class="blogpost__more btn ">
+            <span class="lang lang-ru">Читать</span>
+            <span class="lang lang-en hidden">Read</span>
+          </a>
+        </div>
+      </article>
     </div>
   </main>
 

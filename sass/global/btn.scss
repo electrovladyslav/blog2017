@@ -1,0 +1,11 @@
+.btn {
+  display: inline-block;
+  padding: 30px 90px;
+  border: 1px solid black;
+}
+
+@media #{$media-desktop-width} {
+  .btn {
+    padding: 15px 48px;
+  }
+}

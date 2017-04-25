@@ -41,7 +41,7 @@ body {
   font-family: 'OpenSans';
   font-size: 29px;
   line-height: 52px;
-  background-color: #f9f9f9; }
+  background-color: #fff; }
 
 @media (min-width: 1180px) {
   body {
@@ -82,6 +82,15 @@ select:active {
 .hidden {
   display: none; }
 
+.btn {
+  display: inline-block;
+  padding: 30px 90px;
+  border: 1px solid black; }
+
+@media (min-width: 1180px) {
+  .btn {
+    padding: 15px 48px; } }
+
 .page-wrapper {
   position: relative;
   width: 750px;
@@ -108,11 +117,17 @@ select:active {
 .intro__header {
   margin-bottom: 20px;
   font-size: 90px;
-  line-height: 92px; }
+  line-height: 92px;
+  color: #4d5c66; }
 
 .intro__text {
   font-size: 29px;
-  line-height: 52px; }
+  line-height: 52px;
+  color: #323d43; }
+
+.intro__text-pic {
+  dispaly: inline-block;
+  vertical-align: baseline; }
 
 @media (min-width: 1180px) {
   .intro {
@@ -120,12 +135,10 @@ select:active {
     margin-right: 260px; }
   .intro__header {
     font-size: 44px;
-    line-height: 60px;
-    color: #4d5c66; }
+    line-height: 60px; }
   .intro__text {
     font-size: 18px;
-    line-height: 32px;
-    color: #323d43; } }
+    line-height: 32px; } }
 
 .promo {
   display: -ms-flexbox;
@@ -155,8 +168,154 @@ select:active {
 .map {
   min-height: 350px; }
 
-.map__embed {
-  background-color: #b5cfed; }
+.map__definition {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 29px;
+  line-height: 52px;
+  color: #323d43; }
+
+.map__definition-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 92px;
+  color: #4d5c66; }
+
+.map__popup-pic {
+  width: 499px;
+  height: 269px; }
+
+.map__definition-term {
+  text-align: left;
+  font-weight: bold; }
+
+.map__definition-descr {
+  text-align: left;
+  padding-left: 50px; }
+
+.map__definition-term {
+  color: #8ca3aa; }
+
+.map__definition-term--red {
+  color: #d41c1f; }
+
+@media (min-width: 1180px) {
+  .map__definition {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 32px; }
+  .map__definition-header {
+    font-size: 36px;
+    line-height: 50px; }
+  .map__popup-definition {
+    width: 55%;
+    margin-right: auto; } }
+
+.blogposts-container {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  color: #021725; }
+
+.blogposts-container__header {
+  font-size: 90px;
+  line-height: 92px;
+  text-align: center; }
+
+@media (min-width: 1180px) {
+  .blogposts-container {
+    margin-left: 260px;
+    margin-right: 260px; }
+  .blogposts-container__header {
+    font-size: 44px;
+    line-height: 60px; } }
+
+.blogpost {
+  margin-top: 105px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.blogpost__img {
+  width: 690px;
+  height: 630px; }
+
+.blogpost__body {
+  padding-top: 20px;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-bottom: 80px;
+  background-color: #f9f9f9; }
+
+.blogpost__date {
+  font-size: 28px;
+  line-height: 92px;
+  text-transform: uppercase; }
+
+.blogpost__header {
+  font-size: 45px;
+  line-height: 60px; }
+
+.blogpost_text {
+  margin-top: 55px;
+  font-size: 29px;
+  line-height: 47px; }
+
+.blogpost__more {
+  margin-top: 100px;
+  font-size: 29px;
+  line-height: 47px; }
+
+@media (min-width: 1180px) {
+  .blogpost {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin-top: 55px; }
+  .blogpost__img {
+    width: 385px;
+    height: 390px; }
+  .blogpost__body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+    padding-right: 35px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    background-color: #f9f9f9; }
+  .blogpost__date {
+    font-size: 13px;
+    line-height: 60px;
+    text-transform: uppercase; }
+  .blogpost__header {
+    font-size: 30px;
+    line-height: 45px; }
+  .blogpost_text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 25px; }
+  .blogpost__more {
+    margin-top: auto;
+    font-size: 14px;
+    line-height: 32px; } }
 
 .footer {
   display: -ms-flexbox;
