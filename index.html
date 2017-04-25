@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <!--, initial-scale=1-->
   <meta property="og:image" content="img/vesselstraffic_popup.jpg">
   <meta name="description" content="Влада блог">
   <title>Electrovlad's Blog</title>
@@ -44,28 +45,37 @@
      <!--Vesselfinder map-->
       <script src="js/map-vesselfinder.js"></script>
       <script src="https://www.vesselfinder.com/aismap.js"></script>
-
+      <!--TODO временная заглушка-->
+      <!--<script src="js/vesselfinder-aismap.js"></script>-->
       <!--TODO добавить английский-->
-      <div class="map__definition hidden">
+      <div class="map__definition ">
+        <h2 class="map__definition-header">
+          <span class="lang lang-ru">Что у нас здесь есть?</span>
+          <span class="lang lang-en hidden">What is that</span>
+        </h2>
         <img class="map__popup-pic" src="img/vesselstraffic_popup.jpg" alt="update date">
-        <span class="lang lang-ru">Что у нас здесь есть?</span>
+
         <dl class="map__popup-definition">
-          <dt class="map__popup-term">Next port</dt>
-          <dd class="intro__definition-descr">Следующий порт</dd>
-          <dt class="map__popup-term">ETA</dt>
-          <dd class="intro__definition-descr"><i>Estimated Time of Arrival</i> приблизительная дата прихода в следующий порт (см. выше)</dd>
-          <dt class="map__popup-term">IMO</dt>
-          <dd class="intro__definition-descr"><i>International Maritime Organization</i> международный номер судна</dd>
-          <dt class="map__popup-term">Speed</dt>
-          <dd class="intro__definition-descr">Скорость судна в узлах (knots). 1 узел = 1 морская миля (1.852 км) в час. Соответственно 14.9 узлов = 27.5 км/ч. Нормальная, кстати, для парохода скорость.</dd>
-          <dt class="map__popup-term">APR 20, 2017 14:25 UTC</dt>
-          <dd class="map__popup-descr">Дата, и время, когда данные о положении судна были получены. Если эта дата сильно отстаёт от сегодняшней, может быть, что кораблик давно уплыл)</dd>
+          <dt class="map__definition-term">Next port</dt>
+          <dd class="map__definition-descr">Следующий порт</dd>
+
+          <dt class="map__definition-term">ETA</dt>
+          <dd class="map__definition-descr"><i>Estimated Time of Arrival</i> приблизительная дата прихода в следующий порт (см. выше)</dd>
+
+          <dt class="map__definition-term">IMO</dt>
+          <dd class="map__definition-descr"><i>International Maritime Organization</i> международный номер судна</dd>
+
+          <dt class="map__definition-term">Speed</dt>
+          <dd class="map__definition-descr">Скорость судна в узлах (knots). 1 узел = 1 морская миля (1.852 км) в час. Соответственно 14.9 узлов = 27.5 км/ч. Нормальная, кстати, для парохода скорость.</dd>
+
+          <dt class="map__definition-term map__definition-term--red">APR 20, 2017 14:25 UTC</dt>
+          <dd class="map__definition-descr">Дата, и время, когда данные о положении судна были получены. Если эта дата сильно отстаёт от сегодняшней, может быть, что кораблик давно уплыл). Именно поэтому, ещё одна карта - более достоверная.</dd>
         </dl>
         </p>
       </div>
      <!--Marine traffic map-->
-     <!--<script src="js/map-marinetraffic.js"></script>-->
-     <!--<script src="js/marinetraffic-embedmap.js"></script>-->
+     <script src="js/map-marinetraffic.js"></script>
+     <script src="js/marinetraffic-embedmap.js"></script>
      <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
     </div>
 
