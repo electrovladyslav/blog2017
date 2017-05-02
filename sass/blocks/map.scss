@@ -8,8 +8,7 @@
   align-items: center;
   margin-top: 30px;
   margin-bottom:30px;
-  margin-left: $mobile-margin;
-  margin-right: $mobile-margin;
+  @include mobile-margins;
   font-size: 29px;
   line-height: 52px;
   color: $footer-text;
@@ -50,6 +49,7 @@
   .map__definition {
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    @include desktop-text-margins;
     font-size: 18px;
     line-height: 32px;
   }
@@ -58,6 +58,10 @@
     line-height: 50px;
   }
 
+  .map__popup-pic {
+    width: 230px;
+    height: 265px;
+  }
 
   .map__popup-definition {
     width: 55%;

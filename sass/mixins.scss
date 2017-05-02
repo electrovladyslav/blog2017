@@ -1,0 +1,9 @@
+@mixin mobile-margins() {
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
+}
+
+@mixin desktop-text-margins() {
+  margin-left: $desktop-margin + $desktop-text-margin;
+  margin-right: $desktop-margin + $desktop-text-margin;
+}

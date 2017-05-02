@@ -47,19 +47,23 @@ body {
     line-height: 32px;
   }
 }
-a,
+/*a,
 a:hover,
 a:active,
 a:visited {
   text-decoration: none;
   color: inherit;
-}
+}*/
 
 h1, h2, h3, h4,
 p, dl, dt, dd,
 ul, li {
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
 }
 
 button,

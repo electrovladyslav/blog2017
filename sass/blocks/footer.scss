@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 40px;
   padding-left: 15px;
   padding-bottom: 40px;
@@ -20,6 +20,8 @@
     flex-direction: row;
     font-size: 16px;
     line-height: 34px;
+    padding-left: $desktop-margin + $desktop-text-margin;
+    padding-right: $desktop-margin + $desktop-text-margin;
   }
 
   .footer__produced {

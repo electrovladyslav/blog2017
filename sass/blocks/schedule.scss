@@ -1,0 +1,56 @@
+.schedule {
+  margin-top: 250px;
+  @include mobile-margins;
+}
+
+.schedule__header {
+  margin-bottom: 100px;
+  font-size: 90px;
+  line-height: 92px;
+  color: $intro-header;
+}
+
+.schedule__post {
+  width: 563px;
+  margin: 0 auto;
+  padding-bottom: 85px;
+  background-color: $blog-bg;
+}
+.schedule__img {
+  width: 563px;
+  height: 232px;
+}
+
+.schedule__text {
+  margin: 80px 90px 85px 75px;
+  font-size: 29px;
+  line-height: 52px;
+  color: $footer-text;
+}
+
+@media #{$media-desktop-width} {
+  .schedule {
+    @include desktop-text-margins;
+  }
+
+  .schedule__header {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  .schedule__post {
+    width: 100%;
+  }
+
+  .schedule__img {
+    /*width: 760px;
+    height: 313px;*/
+    margin-left: 75px;
+    margin-top: 50px;
+  }
+
+  .schedule__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

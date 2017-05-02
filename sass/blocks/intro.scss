@@ -1,8 +1,7 @@
 .intro {
+  @include mobile-margins;
   margin-top: 50px;
   margin-bottom:50px;
-  margin-left: $mobile-margin;
-  margin-right: $mobile-margin;
   text-align: center;
 }
 
@@ -27,8 +26,7 @@
 
 @media #{$media-desktop-width} {
   .intro {
-    margin-left: $desktop-margin + $desktop-text-margin;
-    margin-right: $desktop-margin + $desktop-text-margin;
+    @include desktop-text-margins;
   }
 
   .intro__header {
@@ -40,4 +38,4 @@
     font-size: 18px;
     line-height: 32px;
   }
-  }
+}
