@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <!--, initial-scale=1-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---->
   <meta property="og:image" content="img/vesselstraffic_popup.jpg">
   <meta name="description" content="Влада блог">
   <title>Electrovlad's Blog</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
@@ -43,17 +43,20 @@
     <div class="map">
 
      <!--Vesselfinder map-->
-      <script src="js/map-vesselfinder.js"></script>
-      <script src="https://www.vesselfinder.com/aismap.js"></script>
-      <!--TODO временная заглушка-->
+      <!--<script src="js/map-vesselfinder.js"></script>-->
+      <!--<script src="https://www.vesselfinder.com/aismap.js"></script>-->
       <!--<script src="js/vesselfinder-aismap.js"></script>-->
       <!--TODO добавить английский-->
-      <div class="map__definition ">
+      <!--<div class="map__definition ">
         <h2 class="map__definition-header">
           <span class="lang lang-ru">Что у нас здесь есть?</span>
           <span class="lang lang-en hidden">What is that</span>
         </h2>
-        <img class="map__popup-pic" src="img/vesselstraffic_popup.jpg" alt="update date">
+        <picture>
+          <source media="(min-width: 1180px)" srcset="img/vesselstraffic_popup_descktop.jpg">
+          <img class="map__popup-pic" src="img/vesselstraffic_popup.jpg" alt="map popup" width="499" height="269">
+
+        </picture>
 
         <dl class="map__popup-definition">
           <dt class="map__definition-term">Next port</dt>
@@ -72,15 +75,27 @@
           <dd class="map__definition-descr">Дата, и время, когда данные о положении судна были получены. Если эта дата сильно отстаёт от сегодняшней, может быть, что кораблик давно уплыл). Именно поэтому, ещё одна карта - более достоверная.</dd>
         </dl>
         </p>
-      </div>
+      </div>-->
      <!--Marine traffic map-->
      <script src="js/map-marinetraffic.js"></script>
      <script src="js/marinetraffic-embedmap.js"></script>
      <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
     </div>
 
-    <div class="schedule hidden">
-      <table class="table table-striped">
+    <!--TODO добавить английский-->
+    <div class="schedule">
+      <h2 class="schedule__header">Немного о маршруте</h2>
+
+      <div class="schedule__post">
+        <!--<picture>-->
+          <!--<source media="(min-width: 1180px)" srcset="img/voyage_img_desktop.jpg">-->
+          <img src="img/voyage_img.jpg" alt="voyage track" class="schedule__img" width="563" height="232">
+        <!--</picture>-->
+
+        <p class="schedule__text">Сейчас судо работает под чартером CMA CGM. Это большая (третья по величине) компания занимающаяся торговыми перевозками. Крайние точки: Дар Эс Салаам (Танзания) и Тайланд (Лаем Чабанг). По пути забегаем на Шриланку (Коломбо), в Малайзию (Порт Келанг, Пелепас) и в Сингапур. На обратном пути в Африку заходим либо на Мальдивы (Мале), либо на Сейшелы (Порт Виктория). Подробнее узнать про маршрут, растояния, сроки доставки можно узнать на сайте перевозчика
+        <a href="https://www.cma-cgm.com/products-services/line-services/flyer/ASEA" title="CMA CGM ASEA">CMA CGM Asea - Tanzania</a></p>
+      </div>
+      <table class="table table-striped hidden">
         <thead>
         <tr>
           <th>&nbsp;</th>
