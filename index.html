@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!---->
   <meta property="og:image" content="img/vesselstraffic_popup.jpg">
   <meta name="description" content="Влада блог">
   <title>Electrovlad's Blog</title>
@@ -42,44 +41,11 @@
     </div>
     <div class="map">
 
-     <!--Vesselfinder map-->
-      <!--<script src="js/map-vesselfinder.js"></script>-->
-      <!--<script src="https://www.vesselfinder.com/aismap.js"></script>-->
-      <!--<script src="js/vesselfinder-aismap.js"></script>-->
-      <!--TODO добавить английский-->
-      <!--<div class="map__definition ">
-        <h2 class="map__definition-header">
-          <span class="lang lang-ru">Что у нас здесь есть?</span>
-          <span class="lang lang-en hidden">What is that</span>
-        </h2>
-        <picture>
-          <source media="(min-width: 1180px)" srcset="img/vesselstraffic_popup_descktop.jpg">
-          <img class="map__popup-pic" src="img/vesselstraffic_popup.jpg" alt="map popup" width="499" height="269">
 
-        </picture>
-
-        <dl class="map__popup-definition">
-          <dt class="map__definition-term">Next port</dt>
-          <dd class="map__definition-descr">Следующий порт</dd>
-
-          <dt class="map__definition-term">ETA</dt>
-          <dd class="map__definition-descr"><i>Estimated Time of Arrival</i> приблизительная дата прихода в следующий порт (см. выше)</dd>
-
-          <dt class="map__definition-term">IMO</dt>
-          <dd class="map__definition-descr"><i>International Maritime Organization</i> международный номер судна</dd>
-
-          <dt class="map__definition-term">Speed</dt>
-          <dd class="map__definition-descr">Скорость судна в узлах (knots). 1 узел = 1 морская миля (1.852 км) в час. Соответственно 14.9 узлов = 27.5 км/ч. Нормальная, кстати, для парохода скорость.</dd>
-
-          <dt class="map__definition-term map__definition-term--red">APR 20, 2017 14:25 UTC</dt>
-          <dd class="map__definition-descr">Дата, и время, когда данные о положении судна были получены. Если эта дата сильно отстаёт от сегодняшней, может быть, что кораблик давно уплыл). Именно поэтому, ещё одна карта - более достоверная.</dd>
-        </dl>
-        </p>
-      </div>-->
-     <!--Marine traffic map-->
-     <script src="js/map-marinetraffic.js"></script>
-     <script src="js/marinetraffic-embedmap.js"></script>
-     <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
+      <!--Marine traffic map-->
+      <script src="js/map-marinetraffic.js"></script>
+      <script src="js/marinetraffic-embedmap.js"></script>
+      <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
     </div>
 
     <!--TODO добавить английский-->
@@ -87,114 +53,118 @@
       <h2 class="schedule__header">Немного о маршруте</h2>
 
       <div class="schedule__post">
-        <!--<picture>-->
-          <!--<source media="(min-width: 1180px)" srcset="img/voyage_img_desktop.jpg">-->
-          <img src="img/voyage_img.jpg" alt="voyage track" class="schedule__img" width="563" height="232">
-        <!--</picture>-->
 
-        <p class="schedule__text">Сейчас судо работает под чартером CMA CGM. Это большая (третья по величине) компания занимающаяся торговыми перевозками. Крайние точки: Дар Эс Салаам (Танзания) и Тайланд (Лаем Чабанг). По пути забегаем на Шриланку (Коломбо), в Малайзию (Порт Келанг, Пелепас) и в Сингапур. На обратном пути в Африку заходим либо на Мальдивы (Мале), либо на Сейшелы (Порт Виктория). Подробнее узнать про маршрут, растояния, сроки доставки можно узнать на сайте перевозчика
-        <a href="https://www.cma-cgm.com/products-services/line-services/flyer/ASEA" title="CMA CGM ASEA">CMA CGM Asea - Tanzania</a></p>
+        <p class="schedule__text">Сейчас судо работает под чартером <a href="https://www.cma-cgm.com" title="Official site">CMA CGM</a>. Это большая, третья в мире, компания занимающаяся торговыми перевозками.Крайние точки: Дар Эс Салаам (Танзания) и Тайланд (Лаем Чабанг). По пути забегаем на Шриланку (Коломбо), в Малайзию (Порт Келанг, Пелепас) и в Сингапур.</p>
+
+        <img src="img/voyage_img.jpg" alt="voyage track" class="schedule__img" width="563" height="232">
+
+        <p class="schedule__text">На обратном пути в Африку, заходим либо на Мальдивы (Мале), либо на Сейшелы (Порт Виктория). Подробнее узнать про маршрут, растояния, сроки доставки можно узнать на сайте перевозчика <a href="https://www.cma-cgm.com/products-services/line-services/flyer/ASEA" title="CMA CGM ASEA">CMA CGM Asea - Tanzania</a></p>
       </div>
-      <table class="table table-striped hidden">
-        <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th>
-            <span class="lang lang-ru">Порт</span>
-            <span class="lang lang-en hidden">Port</span>
-          </th>
-          <th>
-            <span class="lang lang-ru">Страна</span>
-            <span class="lang lang-en hidden">Country</span>
-          </th>
-          <th>
-            <span class="lang lang-ru">Заход</span>
-            <span class="lang lang-en hidden">Arrival</span>
-          </th>
-          <th>
-            <span class="lang lang-ru">Отход</span>
-            <span class="lang lang-en hidden">Departure</span>
-          </th>
-        </tr>
-        </thead>
 
-        <tbody class="schedule-body">
-        <tr>
-          <td>&nbsp;</td>
-          <td class="port">
-            <span class="lang lang-ru">Какой-то порт</span>
-            <span class="lang lang-en hidden">Some port</span>
-          </td>
-          <td class="country">
-            <span class="lang lang-ru">Китай</span>
-            <span class="lang lang-en hidden">China</span>
-          </td>
-          <td class="arrival">
-            <time datetime="2016-11-15">
-              <span class="lang lang-ru">15 Ноября</span>
-              <span class="lang lang-en hidden">15 of November</span>
-            </time>
-          </td>
-          <td class="departure">
-            <time datetime="2016-11-25">
-              <span class="lang lang-ru">25 Ноября</span>
-              <span class="lang lang-en hidden">25 of November</span>
-            </time>
-          </td>
-        </tr>
 
-        <tr>
-          <td class="singnoff">
-            &nbsp;
-											<span class="label label-primary label-sm">
-												<span class="lang lang-ru">я улетел домой</span>
-												<span class="lang lang-en hidden">my sign-off port</span>
-											</span>
-          </td>
-          <td class="port">
-            <span class="lang lang-ru">Сан Николас</span>
-            <span class="lang lang-en hidden">San Nicolas</span>
-          </td>
-          <td class="country">
-            <span class="lang lang-ru">Аргентина</span>
-            <span class="lang lang-en hidden">Argentina</span>
-          </td>
-          <td class="arrival">
-            <time datetime="2016-10-01">
-              <span class="lang lang-ru">1 Октября</span>
-              <span class="lang lang-en hidden">1 of October</span>
-            </time>
-          </td>
-          <td class="departure">
-            <time datetime="2016-10-05">
-              <span class="lang lang-ru">5 Октября</span>
-              <span class="lang lang-en hidden">5 of October</span>
-            </time>
-          </td>
-        </tr>
-        </tbody>
-        </table>
+      <!--<table class="table table-striped hidden">-->
+        <!--<thead>-->
+        <!--<tr>-->
+          <!--<th>&nbsp;</th>-->
+          <!--<th>-->
+            <!--<span class="lang lang-ru">Порт</span>-->
+            <!--<span class="lang lang-en hidden">Port</span>-->
+          <!--</th>-->
+          <!--<th>-->
+            <!--<span class="lang lang-ru">Страна</span>-->
+            <!--<span class="lang lang-en hidden">Country</span>-->
+          <!--</th>-->
+          <!--<th>-->
+            <!--<span class="lang lang-ru">Заход</span>-->
+            <!--<span class="lang lang-en hidden">Arrival</span>-->
+          <!--</th>-->
+          <!--<th>-->
+            <!--<span class="lang lang-ru">Отход</span>-->
+            <!--<span class="lang lang-en hidden">Departure</span>-->
+          <!--</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+
+        <!--<tbody class="schedule-body">-->
+        <!--<tr>-->
+          <!--<td>&nbsp;</td>-->
+          <!--<td class="port">-->
+            <!--<span class="lang lang-ru">Дар Эс Салаам</span>-->
+            <!--<span class="lang lang-en hidden">Dar Es Salaam</span>-->
+          <!--</td>-->
+          <!--<td class="country">-->
+            <!--<span class="lang lang-ru">Танзания</span>-->
+            <!--<span class="lang lang-en hidden">Tanzania</span>-->
+          <!--</td>-->
+          <!--<td class="arrival">-->
+            <!--<time datetime="2016-05-06">-->
+              <!--<span class="lang lang-ru">6 мая</span>-->
+              <!--<span class="lang lang-en hidden">6 of May</span>-->
+            <!--</time>-->
+          <!--</td>-->
+          <!--<td class="departure">-->
+            <!--<time datetime="2016-05-10">-->
+              <!--<span class="lang lang-ru">10 Мая</span>-->
+              <!--<span class="lang lang-en hidden">10 of May</span>-->
+            <!--</time>-->
+          <!--</td>-->
+        <!--</tr>-->
+
+        <!--<tr>-->
+          <!--<td>&nbsp;</td>-->
+          <!--<td class="port">-->
+            <!--<span class="lang lang-ru">Коломбо</span>-->
+            <!--<span class="lang lang-en hidden">Colombo</span>-->
+          <!--</td>-->
+          <!--<td class="country">-->
+            <!--<span class="lang lang-ru">Шри Ланка</span>-->
+            <!--<span class="lang lang-en hidden">Shri Lanka</span>-->
+          <!--</td>-->
+          <!--<td class="arrival">-->
+            <!--<time datetime="2016-05-21">-->
+              <!--<span class="lang lang-ru">21 Мая</span>-->
+              <!--<span class="lang lang-en hidden">21 of May</span>-->
+            <!--</time>-->
+          <!--</td>-->
+          <!--<td class="departure">-->
+            <!--<time datetime="2017-05-22">-->
+              <!--<span class="lang lang-ru">22 Мая</span>-->
+              <!--<span class="lang lang-en hidden">22 of May</span>-->
+            <!--</time>-->
+          <!--</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+      <!--</table>-->
 
 
     </div>
 
-    <div class="blogposts-container hidden">
+    <div class="blogposts-container ">
       <h2 class="blogposts-container__header">
         <span class="lang lang-ru">Блог</span>
         <span class="lang lang-en hidden">Blog</span>
       </h2>
 
-      <article class="blogpost">
-        <img src="img/fixiks_400x400.jpg" alt="Fixiks" class="blogpost__img blogpost__img--main">
-        <div class="blogpost__body">
-          <div class="blogpost__date">
+      <article class="blogpost-preview">
+        <div  class="blogpost-preview__picture">
+          <picture>
+            <source media="(min-width: 1180px)" srcset="img/blogpost_preview_fixiks_desktop.jpg">
+            <img src="img/blogpost_preview_fixiks_mobile.jpg" class="blogpost-preview__img blogpost__img--main" alt="Fixiks" >
+          </picture>
+        </div>
+        <div class="blogpost-preview__body">
+          <div class="blogpost-preview__date">
             <span class="lang lang-ru">20 Апреля 2017</span>
             <span class="lang lang-en hidden">20 April 2017</span>
           </div>
-          <h3 class="blogpost__header blogpost__header--long">А кто такие фиксики? Большой большой секрет!</h3>
-          <p class="blogpost_text">Я заметил, что моряки, особенно те, кто работает в машинном отделении, очень похожи на фиксиков...
-            <!--Как всем известно, "...они чинят изнутри утюги, моторы, телефоны, мр3, прочие приборы". Задача машинной команды такая же - поддерживать все устройства на борту судна в рабочем состоянии. Я, как электромеханик отвечаю за всю эелектрическую составляющую.  У нас даже свой Дедус есть. Ещё со времён советского флота, старший механик - капитан машинного отделения, по сути - называется дедом. И всё-равно 60 лет ему или 30, он всё равно дед.--></p>
-          <a href="#" class="blogpost__more btn ">
+          <h3 class="blogpost-preview__header">
+            <span class="lang lang-ru">А кто такие фиксики? Большой большой секрет!</span>
+            <span class="lang lang-en hidden">So who are the Fixiks? It's a big secret!</span>
+          </h3>
+          <p class="blogpost-preview__text">Я заметил, что моряки, особенно те, кто работает в машинном отделении, очень похожи
+            на фиксиков <a href="blog-fixiks.html" title="Фиксики">...</a>
+           </p>
+          <a href="blog-fixiks.html" class="blogpost-preview__more btn ">
             <span class="lang lang-ru">Читать</span>
             <span class="lang lang-en hidden">Read</span>
           </a>
@@ -213,8 +183,12 @@
   </footer>
 
 
-
-
 </div>
+<!--<script async defer src="js/map-marinetraffic-api.js"></script>-->
+<!--<script async defer src="js/map-google-init.js"></script>-->
+<!--<script async defer-->
+<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9XC2Mrcc_WtsrTm_TaZbtEGEYljczgCQ&callback=initMap">-->
+<!--//google api key AIzaSyC9XC2Mrcc_WtsrTm_TaZbtEGEYljczgCQ-->
+<!--</script>-->
 </body>
 </html>
