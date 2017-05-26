@@ -1,8 +1,17 @@
 /*---------FONTS----------------------*/
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff'),
+      url('../fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -26,6 +35,17 @@
   font-weight: bold;
   font-style: italic;
 }
+
+/*@font-face{
+  font-family: 'Cardo';
+  //src: url('../fonts/Cardo-Regular.eot');
+  src: //url('../fonts/Cardo-Regular.eot?iefix') format('eot'),
+  //url('../fonts/Cardo-Regular.woff') format('woff'),
+  url('../fonts/Cardo-Regular.ttf') format('truetype');
+  //url('../fonts/Cardo-Regular.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
 /* -------TAGS-------------------------- */
 * {
   box-sizing: border-box;
@@ -35,7 +55,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', Arial, sans-serif;
   font-size: 29px;
   line-height: 52px;
   background-color: #fff;
@@ -47,13 +67,13 @@ body {
     line-height: 32px;
   }
 }
-/*a,
+a,
 a:hover,
 a:active,
 a:visited {
-  text-decoration: none;
+  //text-decoration: none;
   color: inherit;
-}*/
+}
 
 h1, h2, h3, h4,
 p, dl, dt, dd,
@@ -66,6 +86,7 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+.btn,
 button,
 button:hover,
 button:active {

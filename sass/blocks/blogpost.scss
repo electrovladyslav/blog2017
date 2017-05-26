@@ -1,85 +1,88 @@
 .blogpost {
-  margin-top: 105px;
-  display: flex;
-  flex-direction: column;
-}
-
-.blogpost__img {
-  width: 690px;
-  height: 630px;
-}
-
-.blogpost__body {
-  padding-top: 20px;
-  padding-right:75px;
-  padding-left:75px;
-  padding-bottom: 80px;
-  background-color: $blog-bg;
-}
-
-.blogpost__date {
-  font-size: 28px;
-  line-height: 92px;
-  text-transform: uppercase;
+  @include  mobile-margins;
+  margin-top: 100px;
+  margin-bottom:100px;
 }
 
 .blogpost__header {
-  font-size: 45px;
-  line-height: 60px;
-}
-.blogpost_text {
-  margin-top: 55px;
-  font-size: 29px;
-  line-height: 47px;
+  font-size: 56px;
+  line-height: 95px;
+  font-weight: bold;
+  text-align: left;
 }
 
-.blogpost__more {
-  margin-top: 100px;
-  font-size: 29px;
+.blogpost__date{
+  margin-top:15px;
+  font-size: 27px;
+  line-height: 61px;
+  font-weight: 200;
+  color: $blog-date;
+}
+
+.blogpost__text {
+  //TODO
+  //font-family: 'Cardo', Arial, sans-serif;
+  margin-top: 40px;
+  font-size: 30px;
   line-height: 47px;
+  font-weight: normal;
+  color: $blog-text;
+}
+
+.blogpost__img {
+  display: block;
+  margin: 40px auto;
+
+  &--dedus{
+    width: 465px;
+    height: 260px;
+  }
+
+  &--dedus-2 {
+    width: 203px;
+    height: 248px;
+  }
+
+  &--papus {
+    width: 369px;
+    height: 481px;
+  }
+
+  &--stuff {
+    width: 480px;
+    height: 270px;
+  }
+
+  &--end {
+    width: 482px;
+    height: 227px;
+  }
+}
+
+.blogpost__home-btn {
+  margin-top: 50px;
 }
 
 @media #{$media-desktop-width} {
   .blogpost {
-    flex-direction: row;
-    margin-top: 55px;
-  }
-
-  .blogpost__img {
-    width: 385px;
-    height: 390px;
-  }
-
-  .blogpost__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-right:35px;
-    padding-left:40px;
-    padding-bottom: 20px;
-    background-color: $blog-bg;
-  }
-
-  .blogpost__date {
-    font-size: 13px;
-    line-height: 60px;
-    text-transform: uppercase;
+    @include desktop-text-margins;
   }
 
   .blogpost__header {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 66px;
   }
-  .blogpost_text {
-    margin-top: 30px;
+
+  .blogpost__date {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 66px;
+  }
+
+  .blogpost__text {
+    margin-top: 25px;
     font-size: 16px;
     line-height: 25px;
   }
 
-  .blogpost__more {
-    margin-top: auto;
-    font-size: 14px;
-    line-height: 32px;
-  }
 }

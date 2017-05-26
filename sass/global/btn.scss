@@ -2,7 +2,18 @@
   display: inline-block;
   padding: 30px 90px;
   border: 1px solid black;
+
+  &:hover {
+    background: #000;
+    color:#FFF;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
+
 
 @media #{$media-desktop-width} {
   .btn {

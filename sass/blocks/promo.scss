@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height:419px;
-  background: url("../img/promo_bg_mobile@1x.jpg");
+  min-height: 419px;
+  background-image: url("../img/promo_bg_mobile@1x.jpg");
+
+  &.promo--blog-fixiks {
+    min-height: 512px;
+    background-image: url("../img/blog_fixiks_mobile.jpg");
+  }
 }
 
 .promo__header {
@@ -16,8 +21,13 @@
 
 @media #{$media-desktop-width} {
   .promo {
-    min-height:699px;
-    background: url("../img/promo_bg@1x.jpg");
+    min-height: 699px;
+    background-image: url("../img/promo_bg@1x.jpg");
+
+    &.promo--blog-fixiks {
+      min-height: 720px;
+      background-image: url("../img/blog_fixiks_desktop.jpg");
+    }
   }
 
   .promo__header {
