@@ -4,10 +4,17 @@
   justify-content: center;
   min-height: 419px;
   background-image: url("../img/promo_bg_mobile@1x.jpg");
+  background-size: cover;
+  background-position: 50% 0;
 
   &.promo--blog-fixiks {
     min-height: 512px;
     background-image: url("../img/blog_fixiks_mobile.jpg");
+  }
+
+  &.promo--blog-miami {
+    min-height: 512px;
+    background-image: url("../img/blog_miami_mobile.jpg");
   }
 }
 
@@ -27,6 +34,11 @@
     &.promo--blog-fixiks {
       min-height: 720px;
       background-image: url("../img/blog_fixiks_desktop.jpg");
+    }
+
+    &.promo--blog-miami {
+      min-height: 720px;
+      background-image: url("../img/blog_miami_desktop.jpg");
     }
   }
 

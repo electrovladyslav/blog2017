@@ -118,12 +118,12 @@ select:active {
 
 .page-wrapper {
   position: relative;
-  width: 750px;
+  min-width: 750px;
   margin: 0 auto; }
 
 @media (min-width: 1180px) {
   .page-wrapper {
-    width: 1280px; } }
+    min-width: 1280px; } }
 
 .header {
   width: 100%;
@@ -173,10 +173,15 @@ select:active {
   -ms-flex-pack: center;
       justify-content: center;
   min-height: 419px;
-  background-image: url("../img/promo_bg_mobile@1x.jpg"); }
+  background-image: url("../img/promo_bg_mobile@1x.jpg");
+  background-size: cover;
+  background-position: 50% 0; }
   .promo.promo--blog-fixiks {
     min-height: 512px;
     background-image: url("../img/blog_fixiks_mobile.jpg"); }
+  .promo.promo--blog-miami {
+    min-height: 512px;
+    background-image: url("../img/blog_miami_mobile.jpg"); }
 
 .promo__header {
   text-align: center;
@@ -192,6 +197,9 @@ select:active {
     .promo.promo--blog-fixiks {
       min-height: 720px;
       background-image: url("../img/blog_fixiks_desktop.jpg"); }
+    .promo.promo--blog-miami {
+      min-height: 720px;
+      background-image: url("../img/blog_miami_desktop.jpg"); }
   .promo__header {
     font-size: 80px;
     line-height: 60px; } }
@@ -314,7 +322,6 @@ select:active {
   margin-top: 100px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-bottom: 50px;
   color: #000033; }
 
 .blogposts-container__header {
@@ -449,7 +456,9 @@ select:active {
     height: 227px; }
 
 .blogpost__home-btn {
-  margin-top: 50px; }
+  display: block;
+  max-width: 200px;
+  margin: 50px auto 0 auto; }
 
 @media (min-width: 1180px) {
   .blogpost {
@@ -474,6 +483,7 @@ select:active {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  margin-top: 40px;
   padding-top: 40px;
   padding-left: 15px;
   padding-bottom: 40px;
