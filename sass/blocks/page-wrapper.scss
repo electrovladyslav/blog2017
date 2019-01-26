@@ -1,11 +1,11 @@
 .page-wrapper {
   position: relative;
-  width: $mobile-width;
+  min-width: $mobile-width;
   margin: 0 auto;
 }
 
 @media #{$media-desktop-width} {
   .page-wrapper {
-    width: $desktop-width;
+    min-width: $desktop-width;
   }
 }
