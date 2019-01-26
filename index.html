@@ -32,24 +32,38 @@
       </h2>
       <div class="intro__text">
         <p class="intro__text-paragraph">
-          <span class="lang lang-ru">Сейчас я работаю электромехаником на торговом судне "Miami Trader". Пока, на этом сайте только онлайн-карта, чтобы мои родные всегда могли посмотреть, где сейчас находится мой пароход.
-          </span>
-          <span class="lang lang-en hidden">I'm working as Electrical Technical Officer on vessel "Miami trader" now. At he present moment, on this site only on-line map for my relations. I will add a content, when it be ready.
+          <span class="lang lang-ru">Сейчас я работаю электромехаником на контейнеровозе "Kalamoti Trader". Вот онлайн-карта, которая должна показывать, где сейчас находится мой пароход. Но, иногда информация обновляется редко, и позиция судна отличается от реальной.
           </span>
         </p>
       </div>
     </div>
+
     <div class="map">
-
-
-      <!--Marine traffic map-->
-      <script src="js/map-marinetraffic.js"></script>
-      <script src="js/marinetraffic-embedmap.js"></script>
-      <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
+      <!--Vessel finder map-->
+      <script type="text/javascript">
+        // Map appearance
+        var width="100%";         // width in pixels or percentage
+        var height="300";         // height in pixels
+        // var latitude="0.00";      // center latitude (decimal degrees)
+        // var longitude="0.00";     // center longitude (decimal degrees)
+        var zoom="3";             // initial zoom (between 3 and 18)
+        var names=true;          // always show ship names (defaults to false)
+    
+        // Single ship tracking
+        // var mmsi="123456789";     // display latest position (by MMSI)
+        var imo="9701279";        // display latest position (by IMO, overrides MMSI)
+        var show_track=false;     // display track line (last 24 hours)
+    
+        // Fleet tracking
+        // var fleet="e48ab3d80a0e2a9bf28930f2dd08800c"; // your personal Fleet key (displayed in your Profile)
+        // var fleet_name="Carnival"; // display particular fleet from your fleet list
+        // var fleet_timespan="1440"; // maximum age in minutes of the displayed ship positions
+    </script>
+    <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
     </div>
 
     <!--TODO добавить английский-->
-    <div class="schedule">
+    <!-- <div class="schedule">
       <h2 class="schedule__header">Немного о маршруте</h2>
 
       <div class="schedule__post">
@@ -60,90 +74,32 @@
 
         <p class="schedule__text">На обратном пути в Африку, заходим либо на Мальдивы (Мале), либо на Сейшелы (Порт Виктория). Подробнее узнать про маршрут, растояния, сроки доставки можно узнать на сайте перевозчика <a href="https://www.cma-cgm.com/products-services/line-services/flyer/ASEA" title="CMA CGM ASEA">CMA CGM Asea - Tanzania</a></p>
       </div>
-
-
-      <!--<table class="table table-striped hidden">-->
-        <!--<thead>-->
-        <!--<tr>-->
-          <!--<th>&nbsp;</th>-->
-          <!--<th>-->
-            <!--<span class="lang lang-ru">Порт</span>-->
-            <!--<span class="lang lang-en hidden">Port</span>-->
-          <!--</th>-->
-          <!--<th>-->
-            <!--<span class="lang lang-ru">Страна</span>-->
-            <!--<span class="lang lang-en hidden">Country</span>-->
-          <!--</th>-->
-          <!--<th>-->
-            <!--<span class="lang lang-ru">Заход</span>-->
-            <!--<span class="lang lang-en hidden">Arrival</span>-->
-          <!--</th>-->
-          <!--<th>-->
-            <!--<span class="lang lang-ru">Отход</span>-->
-            <!--<span class="lang lang-en hidden">Departure</span>-->
-          <!--</th>-->
-        <!--</tr>-->
-        <!--</thead>-->
-
-        <!--<tbody class="schedule-body">-->
-        <!--<tr>-->
-          <!--<td>&nbsp;</td>-->
-          <!--<td class="port">-->
-            <!--<span class="lang lang-ru">Дар Эс Салаам</span>-->
-            <!--<span class="lang lang-en hidden">Dar Es Salaam</span>-->
-          <!--</td>-->
-          <!--<td class="country">-->
-            <!--<span class="lang lang-ru">Танзания</span>-->
-            <!--<span class="lang lang-en hidden">Tanzania</span>-->
-          <!--</td>-->
-          <!--<td class="arrival">-->
-            <!--<time datetime="2016-05-06">-->
-              <!--<span class="lang lang-ru">6 мая</span>-->
-              <!--<span class="lang lang-en hidden">6 of May</span>-->
-            <!--</time>-->
-          <!--</td>-->
-          <!--<td class="departure">-->
-            <!--<time datetime="2016-05-10">-->
-              <!--<span class="lang lang-ru">10 Мая</span>-->
-              <!--<span class="lang lang-en hidden">10 of May</span>-->
-            <!--</time>-->
-          <!--</td>-->
-        <!--</tr>-->
-
-        <!--<tr>-->
-          <!--<td>&nbsp;</td>-->
-          <!--<td class="port">-->
-            <!--<span class="lang lang-ru">Коломбо</span>-->
-            <!--<span class="lang lang-en hidden">Colombo</span>-->
-          <!--</td>-->
-          <!--<td class="country">-->
-            <!--<span class="lang lang-ru">Шри Ланка</span>-->
-            <!--<span class="lang lang-en hidden">Shri Lanka</span>-->
-          <!--</td>-->
-          <!--<td class="arrival">-->
-            <!--<time datetime="2016-05-21">-->
-              <!--<span class="lang lang-ru">21 Мая</span>-->
-              <!--<span class="lang lang-en hidden">21 of May</span>-->
-            <!--</time>-->
-          <!--</td>-->
-          <!--<td class="departure">-->
-            <!--<time datetime="2017-05-22">-->
-              <!--<span class="lang lang-ru">22 Мая</span>-->
-              <!--<span class="lang lang-en hidden">22 of May</span>-->
-            <!--</time>-->
-          <!--</td>-->
-        <!--</tr>-->
-        <!--</tbody>-->
-      <!--</table>-->
-
-
-    </div>
+    </div> -->
 
     <div class="blogposts-container ">
       <h2 class="blogposts-container__header">
         <span class="lang lang-ru">Блог</span>
         <span class="lang lang-en hidden">Blog</span>
       </h2>
+
+      <article class="blogpost-preview">
+        <div  class="blogpost-preview__picture">
+            <img src="img/blogpost_preview_miami_trader.jpeg" class="blogpost-preview__img blogpost__img--main" alt="Miami" >
+        </div>
+        <div class="blogpost-preview__body">
+          <div class="blogpost-preview__date">
+            <span class="lang lang-ru">25 Января 2019</span>
+          </div>
+          <h3 class="blogpost-preview__header">
+            <span class="lang lang-ru">Miami Trader - 2018</span>
+          </h3>
+          <p class="blogpost-preview__text">В 2018 я работал на этом лайнере мечты<a href="ships-miami.html" title="Читать">...</a>
+           </p>
+          <a href="ships-miami.html" class="blogpost-preview__more btn ">
+            <span class="lang lang-ru">Читать</span>
+          </a>
+        </div>
+      </article>
 
       <article class="blogpost-preview">
         <div  class="blogpost-preview__picture">
@@ -175,10 +131,10 @@
 
   <footer class="footer">
     <p class="footer__produced">
-      <a href="http://vk.com/feed" title="VK">
+      <a href="https://web.facebook.com/profile.php?id=100001634533512" title="facebook">
         <span class="lang lang-ru">Ермолин Владислав</span>
         <span class="lang lang-en hidden">Yermolin Vlad</span>
-      </a>, 2017.</p>
+      </a>, 2019.</p>
     <p class="footer__mail">Email: <a href="mailto:electrovladyslav@gmail.com">electrovladyslav@gmail.com</a>.</p>
   </footer>
 
