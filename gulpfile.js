@@ -67,7 +67,7 @@ gulp.task("build", function (fn) {
   );
 });
 
-gulp.task('deploy', function() {
+gulp.task("deploy", ["build"], function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
