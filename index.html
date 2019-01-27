@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="img/og-back-way.jpg" />
+    <meta name="description" content="Влада блог" />
+    <title>Electrovlad's Blog</title>
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header hidden">
+        <a href="#" class="logo"></a>
+        <nav class="main-nav"></nav>
+      </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="img/og-back-way.jpg">
-  <meta name="description" content="Влада блог">
-  <title>Electrovlad's Blog</title>
-  <link rel="stylesheet" href="css/style.min.css" type="text/css">
-  <link rel="icon" type="image/png" href="img/favicon.png">
-</head>
-<body>
-<div class="page-wrapper">
-  <header class="header hidden">
-    <a href="#" class="logo"></a>
-    <nav class="main-nav"></nav>
-  </header>
+      <main class="main">
+        <div class="promo">
+          <h1 class="promo__header">
+            <span class="lang lang-ru">Я - Влад, и это мой блог!</span>
+            <span class="lang lang-en hidden"
+              >I'm Vlad and that is my blog!</span
+            >
+          </h1>
+        </div>
 
-  <main class="main">
-    <div class="promo">
-      <h1 class="promo__header">
-        <span class="lang lang-ru">Я - Влад, и это мой блог!</span>
-        <span class="lang lang-en hidden">I'm Vlad and that is my blog!</span>
-      </h1>
-    </div>
+        <div class="intro">
+          <h2 class="intro__header">
+            <span class="lang lang-ru">Привет!</span>
+            <span class="lang lang-en hidden">Hello!</span>
+          </h2>
+          <div class="intro__text">
+            <p class="intro__text-paragraph">
+              <span class="lang lang-ru"
+                >Сейчас я работаю электромехаником на контейнеровозе "Kalamoti
+                Trader". Вот онлайн-карта, которая должна показывать, где сейчас
+                находится мой пароход. Но, иногда информация запаздывает,
+                и позиция судна на карте отличается от реальной.
+              </span>
+            </p>
+          </div>
+        </div>
 
-    <div class="intro">
-      <h2 class="intro__header">
-        <span class="lang lang-ru">Привет!</span>
-        <span class="lang lang-en hidden">Hello!</span>
-      </h2>
-      <div class="intro__text">
-        <p class="intro__text-paragraph">
-          <span class="lang lang-ru">Сейчас я работаю электромехаником на контейнеровозе "Kalamoti Trader". Вот онлайн-карта, которая должна показывать, где сейчас находится мой пароход. Но, иногда информация обновляется редко, и позиция судна отличается от реальной.
-          </span>
-        </p>
-      </div>
-    </div>
+        <!-- <div class="map">
+          <!--Vessel finder map>
+          <script type="text/javascript">
+            // Map appearance
+            var width = "100%"; // width in pixels or percentage
+            var height = "300"; // height in pixels
+            // var latitude="0.00";      // center latitude (decimal degrees)
+            // var longitude="0.00";     // center longitude (decimal degrees)
+            var zoom = "3"; // initial zoom (between 3 and 18)
+            var names = true; // always show ship names (defaults to false)
 
-    <div class="map">
-      <!--Vessel finder map-->
-      <script type="text/javascript">
-        // Map appearance
-        var width="100%";         // width in pixels or percentage
-        var height="300";         // height in pixels
-        // var latitude="0.00";      // center latitude (decimal degrees)
-        // var longitude="0.00";     // center longitude (decimal degrees)
-        var zoom="3";             // initial zoom (between 3 and 18)
-        var names=true;          // always show ship names (defaults to false)
-    
-        // Single ship tracking
-        // var mmsi="123456789";     // display latest position (by MMSI)
-        var imo="9701279";        // display latest position (by IMO, overrides MMSI)
-        var show_track=false;     // display track line (last 24 hours)
-    
-        // Fleet tracking
-        // var fleet="e48ab3d80a0e2a9bf28930f2dd08800c"; // your personal Fleet key (displayed in your Profile)
-        // var fleet_name="Carnival"; // display particular fleet from your fleet list
-        // var fleet_timespan="1440"; // maximum age in minutes of the displayed ship positions
-    </script>
-    <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
-    </div>
+            // Single ship tracking
+            // var mmsi="123456789";     // display latest position (by MMSI)
+            var imo = "9701279"; // display latest position (by IMO, overrides MMSI)
+            var show_track = false; // display track line (last 24 hours)
 
-    <!--TODO добавить английский-->
-    <!-- <div class="schedule">
+            // Fleet tracking
+            // var fleet="e48ab3d80a0e2a9bf28930f2dd08800c"; // your personal Fleet key (displayed in your Profile)
+            // var fleet_name="Carnival"; // display particular fleet from your fleet list
+            // var fleet_timespan="1440"; // maximum age in minutes of the displayed ship positions
+          </script>
+          <script
+            type="text/javascript"
+            src="https://www.vesselfinder.com/aismap.js"
+          ></script>
+        </div> -->
+
+        <!-- Marine traffic map -->
+        <div class="map">
+          <script type="text/javascript">
+            width = "100%"; // the width of the embedded map in pixels or percentage 
+            height='500';	// the height of the embedded map in pixels or percentage 
+            border='0';	// the width of the border around the map (zero means no border) 
+            shownames='false';	// to display ship names on the map (true or false) 
+            // latitude='37.4460';	// the latitude of the center of the map, in decimal degrees 
+            // longitude='24.9467';	// the longitude of the center of the map, in decimal degrees 
+            zoom='17';	// the zoom level of the map (values between 2 and 17) 
+            maptype='1';	// use 0 for Normal Map, 1 for Satellite, 2 for OpenStreetMap 
+            trackvessel='248555000';	// MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option 
+            fleet='kalamotitrader@gmail.com';	// the registered email address of a user-defined fleet (user's default fleet is used)
+          </script>
+          <script
+            type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"
+          ></script>
+        </div>
+
+        <!--TODO добавить английский-->
+        <!-- <div class="schedule">
       <h2 class="schedule__header">Немного о маршруте</h2>
 
       <div class="schedule__post">
@@ -76,75 +103,104 @@
       </div>
     </div> -->
 
-    <div class="blogposts-container ">
-      <h2 class="blogposts-container__header">
-        <span class="lang lang-ru">Блог</span>
-        <span class="lang lang-en hidden">Blog</span>
-      </h2>
+        <div class="blogposts-container ">
+          <h2 class="blogposts-container__header">
+            <span class="lang lang-ru">Блог</span>
+            <span class="lang lang-en hidden">Blog</span>
+          </h2>
 
-      <article class="blogpost-preview">
-        <div  class="blogpost-preview__picture">
-            <img src="img/blogpost_preview_miami_trader.jpeg" class="blogpost-preview__img blogpost__img--main" alt="Miami" >
-        </div>
-        <div class="blogpost-preview__body">
-          <div class="blogpost-preview__date">
-            <span class="lang lang-ru">25 Января 2019</span>
-          </div>
-          <h3 class="blogpost-preview__header">
-            <span class="lang lang-ru">Miami Trader - 2018</span>
-          </h3>
-          <p class="blogpost-preview__text">В 2018 я работал на этом лайнере мечты<a href="ships-miami.html" title="Читать">...</a>
-           </p>
-          <a href="ships-miami.html" class="blogpost-preview__more btn ">
-            <span class="lang lang-ru">Читать</span>
-          </a>
-        </div>
-      </article>
+          <article class="blogpost-preview">
+            <div class="blogpost-preview__picture">
+              <img
+                src="img/blogpost_preview_miami_trader.jpeg"
+                class="blogpost-preview__img blogpost__img--main"
+                alt="Miami"
+              />
+            </div>
+            <div class="blogpost-preview__body">
+              <div class="blogpost-preview__date">
+                <span class="lang lang-ru">25 Января 2019</span>
+              </div>
+              <h3 class="blogpost-preview__header">
+                <span class="lang lang-ru">Miami Trader - 2018</span>
+              </h3>
+              <p class="blogpost-preview__text">
+                В 2018 я работал на этом лайнере мечты<a
+                  href="ships-miami.html"
+                  title="Читать"
+                  >...</a
+                >
+              </p>
+              <a href="ships-miami.html" class="blogpost-preview__more btn ">
+                <span class="lang lang-ru">Читать</span>
+              </a>
+            </div>
+          </article>
 
-      <article class="blogpost-preview">
-        <div  class="blogpost-preview__picture">
-          <picture>
-            <source media="(min-width: 1180px)" srcset="img/blogpost_preview_fixiks_desktop.jpg">
-            <img src="img/blogpost_preview_fixiks_mobile.jpg" class="blogpost-preview__img blogpost__img--main" alt="Fixiks" >
-          </picture>
+          <article class="blogpost-preview">
+            <div class="blogpost-preview__picture">
+              <picture>
+                <source
+                  media="(min-width: 1180px)"
+                  srcset="img/blogpost_preview_fixiks_desktop.jpg"
+                />
+                <img
+                  src="img/blogpost_preview_fixiks_mobile.jpg"
+                  class="blogpost-preview__img blogpost__img--main"
+                  alt="Fixiks"
+                />
+              </picture>
+            </div>
+            <div class="blogpost-preview__body">
+              <div class="blogpost-preview__date">
+                <span class="lang lang-ru">20 Апреля 2017</span>
+                <span class="lang lang-en hidden">20 April 2017</span>
+              </div>
+              <h3 class="blogpost-preview__header">
+                <span class="lang lang-ru"
+                  >А кто такие фиксики? Большой большой секрет!</span
+                >
+                <span class="lang lang-en hidden"
+                  >So who are the Fixiks? It's a big secret!</span
+                >
+              </h3>
+              <p class="blogpost-preview__text">
+                Я заметил, что моряки, особенно те, кто работает в машинном
+                отделении, очень похожи на фиксиков
+                <a href="blog-fixiks.html" title="Фиксики">...</a>
+              </p>
+              <a href="blog-fixiks.html" class="blogpost-preview__more btn ">
+                <span class="lang lang-ru">Читать</span>
+                <span class="lang lang-en hidden">Read</span>
+              </a>
+            </div>
+          </article>
         </div>
-        <div class="blogpost-preview__body">
-          <div class="blogpost-preview__date">
-            <span class="lang lang-ru">20 Апреля 2017</span>
-            <span class="lang lang-en hidden">20 April 2017</span>
-          </div>
-          <h3 class="blogpost-preview__header">
-            <span class="lang lang-ru">А кто такие фиксики? Большой большой секрет!</span>
-            <span class="lang lang-en hidden">So who are the Fixiks? It's a big secret!</span>
-          </h3>
-          <p class="blogpost-preview__text">Я заметил, что моряки, особенно те, кто работает в машинном отделении, очень похожи
-            на фиксиков <a href="blog-fixiks.html" title="Фиксики">...</a>
-           </p>
-          <a href="blog-fixiks.html" class="blogpost-preview__more btn ">
-            <span class="lang lang-ru">Читать</span>
-            <span class="lang lang-en hidden">Read</span>
-          </a>
-        </div>
-      </article>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__produced">
+          <a
+            href="https://web.facebook.com/profile.php?id=100001634533512"
+            title="facebook"
+          >
+            <span class="lang lang-ru">Ермолин Владислав</span>
+            <span class="lang lang-en hidden">Yermolin Vlad</span> </a
+          >, 2019.
+        </p>
+        <p class="footer__mail">
+          Email:
+          <a href="mailto:electrovladyslav@gmail.com"
+            >electrovladyslav@gmail.com</a
+          >.
+        </p>
+      </footer>
     </div>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__produced">
-      <a href="https://web.facebook.com/profile.php?id=100001634533512" title="facebook">
-        <span class="lang lang-ru">Ермолин Владислав</span>
-        <span class="lang lang-en hidden">Yermolin Vlad</span>
-      </a>, 2019.</p>
-    <p class="footer__mail">Email: <a href="mailto:electrovladyslav@gmail.com">electrovladyslav@gmail.com</a>.</p>
-  </footer>
-
-
-</div>
-<!--<script async defer src="js/map-marinetraffic-api.js"></script>-->
-<!--<script async defer src="js/map-google-init.js"></script>-->
-<!--<script async defer-->
-<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9XC2Mrcc_WtsrTm_TaZbtEGEYljczgCQ&callback=initMap">-->
-<!--//google api key AIzaSyC9XC2Mrcc_WtsrTm_TaZbtEGEYljczgCQ-->
-<!--</script>-->
-</body>
+    <!--<script async defer src="js/map-marinetraffic-api.js"></script>-->
+    <!--<script async defer src="js/map-google-init.js"></script>-->
+    <!--<script async defer-->
+    <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9XC2Mrcc_WtsrTm_TaZbtEGEYljczgCQ&callback=initMap">-->
+    <!--//google api key AIzaSyC9XC2Mrcc_WtsrTm_TaZbtEGEYljczgCQ-->
+    <!--</script>-->
+  </body>
 </html>
