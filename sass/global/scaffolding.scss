@@ -110,3 +110,13 @@ select:active {
 .hidden {
   display: none;
 }
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.mobile-only {
+  @media #{$media-desktop-width} {
+    display: none;
+  }
+}

@@ -61,8 +61,9 @@
 
 .blogpost__home-btn {
   display: block;
-  max-width: 200px;
+  max-width: 450px;
   margin: 50px auto 0 auto;
+  text-align: center;
 }
 
 @media #{$media-desktop-width} {

@@ -101,6 +101,13 @@ select:active {
 .hidden {
   display: none; }
 
+.crossed {
+  text-decoration: line-through; }
+
+@media (min-width: 1180px) {
+  .mobile-only {
+    display: none; } }
+
 .btn {
   display: inline-block;
   padding: 30px 90px;
@@ -140,10 +147,13 @@ select:active {
   text-align: center; }
 
 .intro__header {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   font-size: 90px;
   line-height: 92px;
   color: #4d5c66; }
+
+.intro__text-paragraph:not(:last-child) {
+  margin-bottom: 45px; }
 
 .intro__text {
   font-size: 29px;
@@ -151,7 +161,7 @@ select:active {
   color: #323d43; }
 
 .intro__text-pic {
-  dispaly: inline-block;
+  display: inline-block;
   vertical-align: baseline; }
 
 @media (min-width: 1180px) {
@@ -159,6 +169,7 @@ select:active {
     margin-left: 250px;
     margin-right: 250px; }
   .intro__header {
+    margin-bottom: 50px;
     font-size: 44px;
     line-height: 60px; }
   .intro__text {
@@ -173,7 +184,7 @@ select:active {
   -ms-flex-pack: center;
       justify-content: center;
   min-height: 419px;
-  background-image: url("../img/promo_bg_mobile@1x.jpg");
+  background-image: url("../img/og-back-way.jpg");
   background-size: cover;
   background-position: 50% 0; }
   .promo.promo--blog-fixiks {
@@ -192,8 +203,7 @@ select:active {
 
 @media (min-width: 1180px) {
   .promo {
-    min-height: 699px;
-    background-image: url("../img/promo_bg@1x.jpg"); }
+    min-height: 699px; }
     .promo.promo--blog-fixiks {
       min-height: 720px;
       background-image: url("../img/blog_fixiks_desktop.jpg"); }
@@ -205,7 +215,8 @@ select:active {
     line-height: 60px; } }
 
 .map {
-  min-height: 350px; }
+  min-height: 350px;
+  background-color: #2b79b7; }
 
 .map__definition {
   display: -ms-flexbox;
@@ -457,8 +468,9 @@ select:active {
 
 .blogpost__home-btn {
   display: block;
-  max-width: 200px;
-  margin: 50px auto 0 auto; }
+  max-width: 450px;
+  margin: 50px auto 0 auto;
+  text-align: center; }
 
 @media (min-width: 1180px) {
   .blogpost {
