@@ -38,8 +38,8 @@
           <div class="intro__text">
             <p class="intro__text-paragraph">
               <span class="lang lang-ru">
-                Я фронтэнд разработчик / судовой электромеханик. Сейчас работаю
-                в море, планирую к концу 2019 работать в отличной IT-компании, в
+                Я фронтэнд разработчик / судовой электромеханик. Пока хожу по
+                морям, планирую к концу 2019 работать в отличной IT-компании, в
                 Киеве;).
                 <!-- TODO обновить резюме и привести ссылку -->
                 <!-- Вот моё актуальное резюме -->
@@ -100,13 +100,17 @@
           </h2>
 
           <article class="blogpost-preview">
-            <div class="blogpost-preview__picture">
+            <picture class="blogpost-preview__picture">
+              <source
+                media="(min-width: 1180px)"
+                srcset="img/blogpost_preview_miami_trader_cutted.jpg"
+              />
               <img
-                src="img/blogpost_preview_miami_trader.jpeg"
+                src="img/blogpost_preview_miami_trader_cutted_mobile.jpg"
                 class="blogpost-preview__img blogpost__img--main"
                 alt="Miami"
               />
-            </div>
+            </picture>
             <div class="blogpost-preview__body">
               <div class="blogpost-preview__date">
                 <span class="lang lang-ru">25 Января 2019</span>
@@ -117,7 +121,7 @@
               <p class="blogpost-preview__text">
                 🚢 В 2017 я работал на этом лайнере мечты.
               </p>
-              <a href="ships-miami.html" class="blogpost-preview__more btn ">
+              <a href="blog-miami.html" class="blogpost-preview__more btn ">
                 <span class="lang lang-ru">Читать</span>
               </a>
             </div>
@@ -128,10 +132,10 @@
               <picture>
                 <source
                   media="(min-width: 1180px)"
-                  srcset="img/blogpost_preview_fixiks_desktop.jpg"
+                  srcset="img/blogpost_preview_fixiks_cutted.jpg"
                 />
                 <img
-                  src="img/blogpost_preview_fixiks_mobile.jpg"
+                  src="img/blogpost_preview_fixiks_cutted_mobile.jpg"
                   class="blogpost-preview__img blogpost__img--main"
                   alt="Fixiks"
                 />
@@ -171,7 +175,7 @@
           >
             <span class="lang lang-ru">Ермолин Владислав</span>
             <span class="lang lang-en hidden">Yermolin Vlad</span> </a
-            >, 2017 - 2019.
+          >, 2017 - 2019.
         </p>
         <p class="footer__mail">
           Email:

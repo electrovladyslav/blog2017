@@ -13,8 +13,8 @@
 
 @media #{$media-desktop-width} {
   .blogposts-container {
-    margin-left: $desktop-margin + $desktop-text-margin;
-    margin-right: $desktop-margin + $desktop-text-margin;
+    margin-left: $desktop-margin;
+    margin-right: $desktop-margin;
   }
 
   .blogposts-container__header {

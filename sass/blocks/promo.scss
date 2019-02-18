@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 419px;
-  background-image: url("../img/og-back-way.jpg");
+  min-height: 394px;
+  background-image: url("../img/promo_bg_mobile_index.jpg");
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
 
   &.promo--blog-fixiks {
     min-height: 512px;
@@ -15,6 +16,7 @@
   &.promo--blog-miami {
     min-height: 512px;
     background-image: url("../img/blog_miami_mobile.jpg");
+    background-position-y: 100%;
   }
 }
 
@@ -26,10 +28,28 @@
   color: $promo-header;
 }
 
+// @media #{$media-tablet-width} {
+//   .promo {
+//     min-height: 675px;
+//     background-image: url("../img/promo_bg_tablet_index.jpg");
+//     background-size: contain;
+
+//     // &.promo--blog-fixiks {
+//     //   min-height: 720px;
+//     //   background-image: url("../img/blog_fixiks_desktop.jpg");
+//     // }
+
+//     // &.promo--blog-miami {
+//     //   min-height: 720px;
+//     //   background-image: url("../img/blog_miami_desktop.jpg");
+//     // }
+//   }
+// }
+
 @media #{$media-desktop-width} {
   .promo {
-    min-height: 699px;
-    // background-image: url("../img/promo_bg@1x.jpg");
+    min-height: 675px;
+    background-image: url("../img/promo_bg_tablet_index.jpg");
 
     &.promo--blog-fixiks {
       min-height: 720px;
