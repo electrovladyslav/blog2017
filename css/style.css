@@ -101,6 +101,13 @@ select:active {
 .hidden {
   display: none; }
 
+.crossed {
+  text-decoration: line-through; }
+
+@media (min-width: 1180px) {
+  .mobile-only {
+    display: none; } }
+
 .btn {
   display: inline-block;
   padding: 30px 90px;
@@ -140,25 +147,25 @@ select:active {
   text-align: center; }
 
 .intro__header {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   font-size: 90px;
   line-height: 92px;
   color: #4d5c66; }
+
+.intro__text-paragraph:not(:last-child) {
+  margin-bottom: 45px; }
 
 .intro__text {
   font-size: 29px;
   line-height: 52px;
   color: #323d43; }
 
-.intro__text-pic {
-  dispaly: inline-block;
-  vertical-align: baseline; }
-
 @media (min-width: 1180px) {
   .intro {
     margin-left: 250px;
     margin-right: 250px; }
   .intro__header {
+    margin-bottom: 50px;
     font-size: 44px;
     line-height: 60px; }
   .intro__text {
@@ -172,16 +179,19 @@ select:active {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  min-height: 419px;
-  background-image: url("../img/promo_bg_mobile@1x.jpg");
+  min-height: 394px;
+  background-image: url("../img/promo_bg_mobile_index.jpg");
+  background-color: #4a6288;
   background-size: cover;
-  background-position: 50% 0; }
+  background-position: 50%;
+  background-repeat: no-repeat; }
   .promo.promo--blog-fixiks {
     min-height: 512px;
     background-image: url("../img/blog_fixiks_mobile.jpg"); }
   .promo.promo--blog-miami {
     min-height: 512px;
-    background-image: url("../img/blog_miami_mobile.jpg"); }
+    background-image: url("../img/blog_miami_mobile.jpg");
+    background-position-y: 100%; }
 
 .promo__header {
   text-align: center;
@@ -192,8 +202,8 @@ select:active {
 
 @media (min-width: 1180px) {
   .promo {
-    min-height: 699px;
-    background-image: url("../img/promo_bg@1x.jpg"); }
+    min-height: 675px;
+    background-image: url("../img/promo_bg_tablet_index.jpg"); }
     .promo.promo--blog-fixiks {
       min-height: 720px;
       background-image: url("../img/blog_fixiks_desktop.jpg"); }
@@ -205,7 +215,8 @@ select:active {
     line-height: 60px; } }
 
 .map {
-  min-height: 350px; }
+  min-height: 350px;
+  background-color: #2b79b7; }
 
 .map__definition {
   display: -ms-flexbox;
@@ -331,25 +342,39 @@ select:active {
 
 @media (min-width: 1180px) {
   .blogposts-container {
-    margin-left: 250px;
-    margin-right: 250px; }
+    margin-left: 50px;
+    margin-right: 50px; }
   .blogposts-container__header {
     font-size: 44px;
     line-height: 60px; } }
 
 .blogpost-preview {
-  margin-top: 105px;
+  margin: 105px auto 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  width: 680px;
+  height: auto;
   background-color: #f9f9f9; }
+
+.blogpost-preview__picture {
+  width: 680px;
+  height: 680px; }
 
 .blogpost-preview__img {
   width: 100%;
-  height: auto; }
+  height: 100%; }
 
 .blogpost-preview__body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   padding: 20px 75px 80px; }
 
 .blogpost-preview__date {
@@ -376,13 +401,14 @@ select:active {
   .blogpost-preview {
     -ms-flex-direction: row;
         flex-direction: row;
+    width: 780px;
     margin-top: 55px; }
   .blogpost-preview__picture {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
+    height: 390px;
+    width: 390px; }
   .blogpost-preview__img {
-    width: 100%;
-    height: 100%; }
+    width: auto;
+    height: 390px; }
   .blogpost-preview__body {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -406,7 +432,7 @@ select:active {
     font-size: 16px;
     line-height: 25px; }
   .blogpost-preview__more {
-    margin-top: 50px;
+    margin-top: auto;
     font-size: 14px;
     line-height: 32px; } }
 
@@ -457,8 +483,9 @@ select:active {
 
 .blogpost__home-btn {
   display: block;
-  max-width: 200px;
-  margin: 50px auto 0 auto; }
+  max-width: 450px;
+  margin: 50px auto 0 auto;
+  text-align: center; }
 
 @media (min-width: 1180px) {
   .blogpost {

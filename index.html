@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +19,11 @@
       <main class="main">
         <div class="promo">
           <h1 class="promo__header">
-            <span class="lang lang-ru">Я - Влад, и это мой блог!</span>
+            <!--TODO добавить английский-->
+            <span class="lang lang-ru"
+              >Я - Влад, и это<br class="mobile-only" />
+              мой <span class="crossed">блог</span> сайт.</span
+            >
             <span class="lang lang-en hidden"
               >I'm Vlad and that is my blog!</span
             >
@@ -33,75 +37,61 @@
           </h2>
           <div class="intro__text">
             <p class="intro__text-paragraph">
+              <span class="lang lang-ru">
+                Я фронтэнд разработчик / судовой электромеханик. Пока хожу по
+                морям, планирую к концу 2019 работать в отличной IT-компании, в
+                Киеве;).
+                <!-- TODO обновить резюме и привести ссылку -->
+                <!-- Вот моё актуальное резюме -->
+              </span>
+            </p>
+
+            <p class="intro__text-paragraph">
+              <span class="lang lang-ru"
+                >Я так подумал: ну какой блог в 2019? Для этого есть соцсети.
+                Потому, всю свежую информацию о моей жизни (если она кому-то
+                интересна), ищите на моей страничке в
+                <a
+                  href="https://www.facebook.com/profile.php?id=100001634533512"
+                  class="link"
+                >
+                  Facebook </a
+                >. На этом сайте я буду тренироваться в веб-делах и сохранять
+                интересную для меня информацию. Текущий проект - перевод этого
+                сайта на связку node.js-pug.
+              </span>
+            </p>
+
+            <p class="intro__text-paragraph">
               <span class="lang lang-ru"
                 >Сейчас я работаю электромехаником на контейнеровозе "Kalamoti
                 Trader". Вот онлайн-карта, которая должна показывать, где сейчас
-                находится мой пароход. Но, иногда информация запаздывает,
-                и позиция судна на карте отличается от реальной.
+                находится мой пароход. Но, иногда информация запаздывает, и
+                позиция судна на карте отличается от реальной.
               </span>
             </p>
           </div>
         </div>
 
-        <!-- <div class="map">
-          <!--Vessel finder map>
-          <script type="text/javascript">
-            // Map appearance
-            var width = "100%"; // width in pixels or percentage
-            var height = "300"; // height in pixels
-            // var latitude="0.00";      // center latitude (decimal degrees)
-            // var longitude="0.00";     // center longitude (decimal degrees)
-            var zoom = "3"; // initial zoom (between 3 and 18)
-            var names = true; // always show ship names (defaults to false)
-
-            // Single ship tracking
-            // var mmsi="123456789";     // display latest position (by MMSI)
-            var imo = "9701279"; // display latest position (by IMO, overrides MMSI)
-            var show_track = false; // display track line (last 24 hours)
-
-            // Fleet tracking
-            // var fleet="e48ab3d80a0e2a9bf28930f2dd08800c"; // your personal Fleet key (displayed in your Profile)
-            // var fleet_name="Carnival"; // display particular fleet from your fleet list
-            // var fleet_timespan="1440"; // maximum age in minutes of the displayed ship positions
-          </script>
-          <script
-            type="text/javascript"
-            src="https://www.vesselfinder.com/aismap.js"
-          ></script>
-        </div> -->
-
         <!-- Marine traffic map -->
         <div class="map">
           <script type="text/javascript">
-            width = "100%"; // the width of the embedded map in pixels or percentage 
-            height='500';	// the height of the embedded map in pixels or percentage 
-            border='0';	// the width of the border around the map (zero means no border) 
-            shownames='false';	// to display ship names on the map (true or false) 
-            // latitude='37.4460';	// the latitude of the center of the map, in decimal degrees 
-            // longitude='24.9467';	// the longitude of the center of the map, in decimal degrees 
-            zoom='17';	// the zoom level of the map (values between 2 and 17) 
-            maptype='1';	// use 0 for Normal Map, 1 for Satellite, 2 for OpenStreetMap 
-            trackvessel='248555000';	// MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option 
-            fleet='kalamotitrader@gmail.com';	// the registered email address of a user-defined fleet (user's default fleet is used)
+            width = "100%"; // the width of the embedded map in pixels or percentage
+            height = "500"; // the height of the embedded map in pixels or percentage
+            border = "0"; // the width of the border around the map (zero means no border)
+            shownames = "false"; // to display ship names on the map (true or false)
+            // latitude='37.4460';	// the latitude of the center of the map, in decimal degrees
+            // longitude='24.9467';	// the longitude of the center of the map, in decimal degrees
+            zoom = "17"; // the zoom level of the map (values between 2 and 17)
+            maptype = "1"; // use 0 for Normal Map, 1 for Satellite, 2 for OpenStreetMap
+            trackvessel = "248555000"; // MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
+            fleet = "kalamotitrader@gmail.com"; // the registered email address of a user-defined fleet (user's default fleet is used)
           </script>
           <script
-            type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"
+            type="text/javascript"
+            src="https://www.marinetraffic.com/js/embed.js"
           ></script>
         </div>
-
-        <!--TODO добавить английский-->
-        <!-- <div class="schedule">
-      <h2 class="schedule__header">Немного о маршруте</h2>
-
-      <div class="schedule__post">
-
-        <p class="schedule__text">Сейчас судно работает под чартером <a href="https://www.cma-cgm.com" title="Official site">CMA CGM</a>. Это большая, третья в мире, компания занимающаяся торговыми перевозками.Крайние точки: Дар Эс Салаам (Танзания) и Тайланд (Лаем Чабанг). По пути забегаем на Шриланку (Коломбо), в Малайзию (Порт Келанг, Пелепас) и в Сингапур.</p>
-
-        <img src="img/voyage_img.jpg" alt="voyage track" class="schedule__img" width="563" height="232">
-
-        <p class="schedule__text">На обратном пути в Африку, заходим либо на Мальдивы (Мале), либо на Сейшелы (Порт Виктория). Подробнее узнать про маршрут, растояния, сроки доставки можно узнать на сайте перевозчика <a href="https://www.cma-cgm.com/products-services/line-services/flyer/ASEA" title="CMA CGM ASEA">CMA CGM Asea - Tanzania</a></p>
-      </div>
-    </div> -->
 
         <div class="blogposts-container ">
           <h2 class="blogposts-container__header">
@@ -110,28 +100,28 @@
           </h2>
 
           <article class="blogpost-preview">
-            <div class="blogpost-preview__picture">
+            <picture class="blogpost-preview__picture">
+              <source
+                media="(min-width: 1180px)"
+                srcset="img/blogpost_preview_miami_trader_cutted.jpg"
+              />
               <img
-                src="img/blogpost_preview_miami_trader.jpeg"
+                src="img/blogpost_preview_miami_trader_cutted_mobile.jpg"
                 class="blogpost-preview__img blogpost__img--main"
                 alt="Miami"
               />
-            </div>
+            </picture>
             <div class="blogpost-preview__body">
               <div class="blogpost-preview__date">
                 <span class="lang lang-ru">25 Января 2019</span>
               </div>
               <h3 class="blogpost-preview__header">
-                <span class="lang lang-ru">Miami Trader - 2018</span>
+                <span class="lang lang-ru">Miami Trader - 2017</span>
               </h3>
               <p class="blogpost-preview__text">
-                В 2018 я работал на этом лайнере мечты<a
-                  href="ships-miami.html"
-                  title="Читать"
-                  >...</a
-                >
+                🚢 В 2017 я работал на этом лайнере мечты.
               </p>
-              <a href="ships-miami.html" class="blogpost-preview__more btn ">
+              <a href="blog-miami.html" class="blogpost-preview__more btn ">
                 <span class="lang lang-ru">Читать</span>
               </a>
             </div>
@@ -142,10 +132,10 @@
               <picture>
                 <source
                   media="(min-width: 1180px)"
-                  srcset="img/blogpost_preview_fixiks_desktop.jpg"
+                  srcset="img/blogpost_preview_fixiks_cutted.jpg"
                 />
                 <img
-                  src="img/blogpost_preview_fixiks_mobile.jpg"
+                  src="img/blogpost_preview_fixiks_cutted_mobile.jpg"
                   class="blogpost-preview__img blogpost__img--main"
                   alt="Fixiks"
                 />
@@ -165,9 +155,8 @@
                 >
               </h3>
               <p class="blogpost-preview__text">
-                Я заметил, что моряки, особенно те, кто работает в машинном
-                отделении, очень похожи на фиксиков
-                <a href="blog-fixiks.html" title="Фиксики">...</a>
+                👨🏽‍🔧 Я заметил, что моряки, особенно те, кто работает в машинном
+                отделении, очень похожи на фиксиков.
               </p>
               <a href="blog-fixiks.html" class="blogpost-preview__more btn ">
                 <span class="lang lang-ru">Читать</span>
@@ -186,7 +175,7 @@
           >
             <span class="lang lang-ru">Ермолин Владислав</span>
             <span class="lang lang-en hidden">Yermolin Vlad</span> </a
-          >, 2019.
+          >, 2017 - 2019.
         </p>
         <p class="footer__mail">
           Email:
