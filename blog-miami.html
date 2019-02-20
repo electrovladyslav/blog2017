@@ -1,154 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="img/vesselstraffic_popup.jpg" />
+    <meta property="og:title" content="MiamiTrader" />
+    <meta
+      property="og:description"
+      content="🚢 В 2017 я работал на этом лайнере мечты."
+    />
+    <meta
+      name="description"
+      content="🚢 В 2017 я работал на этом лайнере мечты."
+    />
+    <meta
+      name="description"
+      content="🚢 В 2017 я работал на этом лайнере мечты."
+    />
+    <title>Miami Trader - Electrovlad's Blog</title>
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header hidden">
+        <a href="#" class="logo"></a>
+        <nav class="main-nav"></nav>
+      </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="img/vesselstraffic_popup.jpg">
-  <meta name="description" content="Влада блог">
-  <title>Miami Trader - Electrovlad's Blog</title>
-  <link rel="stylesheet" href="css/style.min.css" type="text/css">
-  <link rel="icon" type="image/png" href="img/favicon.png">
-</head>
-<body>
-<div class="page-wrapper">
-  <header class="header hidden">
-    <a href="#" class="logo"></a>
-    <nav class="main-nav"></nav>
-  </header>
+      <main class="main">
+        <div class="promo promo--blog-miami"></div>
 
+        <div class="intro">
+          <h1 class="intro__header">
+            <span class="lang lang-ru">Miami trader</span>
+            <span class="lang lang-en hidden">Miami trader</span>
+          </h1>
+          <div class="intro__text">
+            <p class="intro__text-paragraph">
+              <span class="lang lang-ru"
+                >В 2017 (с марта по июль) я работал электромехаником на торговом
+                судне "Miami Trader". Здесь онлайн-карта с позицией парохода и
+                немного информации о его маршруте на тот момент.
+              </span>
+            </p>
+          </div>
+        </div>
 
-  <main class="main">
-    <div class="promo promo--blog-miami"></div>
+        <div class="map">
+          <!--Marine traffic map-->
+          <script src="js/map-marinetraffic.js"></script>
+          <script src="js/marinetraffic-embedmap.js"></script>
+          <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
+        </div>
 
+        <!--TODO добавить английский-->
+        <div class="schedule">
+          <h2 class="schedule__header">Немного о маршруте</h2>
 
-    <div class="intro">
-      <h1 class="intro__header">
-        <span class="lang lang-ru">Miami trader</span>
-        <span class="lang lang-en hidden">Miami trader</span>
-      </h1>
-      <div class="intro__text">
-        <p class="intro__text-paragraph">
-          <span class="lang lang-ru">В 2017 (с марта по июль) я работал электромехаником на торговом судне "Miami Trader". Здесь онлайн-карта с позицией парохода и немного информации о его маршруте на тот момент.
-          </span>
-        </p>
-      </div>
-    </div>
+          <div class="schedule__post">
+            <p class="schedule__text">
+              В 2018 судно работало под чартером
+              <a href="https://www.cma-cgm.com" title="Official site">CMA CGM</a
+              >. Это большая (третья в мире) компания занимающаяся торговыми
+              перевозками.Крайние точки маршрута: Дар Эс Салаам (Танзания) и
+              Тайланд (Лаем Чабанг). По пути мы заходили на Шриланку (Коломбо),
+              в Малайзию (Порт Келанг, Пелепас) и в Сингапур.
+            </p>
 
-    <div class="map">
-      <!--Marine traffic map-->
-      <script src="js/map-marinetraffic.js"></script>
-      <script src="js/marinetraffic-embedmap.js"></script>
-      <!--<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>-->
-    </div>
+            <img
+              src="img/voyage_img.jpg"
+              alt="voyage track"
+              class="schedule__img"
+              width="563"
+              height="232"
+            />
 
-    <!--TODO добавить английский-->
-    <div class="schedule">
-      <h2 class="schedule__header">Немного о маршруте</h2>
+            <p class="schedule__text">
+              На обратном пути в Африку, заходили либо на Мальдивы (Мале), либо
+              на Сейшелы (Порт Виктория). Подробнее узнать про маршрут,
+              растояния, сроки доставки можно узнать на сайте перевозчика
+              <a
+                href="https://www.cma-cgm.com/products-services/line-services/flyer/ASEA"
+                title="CMA CGM ASEA"
+                >CMA CGM Asea - Tanzania</a
+              >
+            </p>
+          </div>
 
-      <div class="schedule__post">
-
-        <p class="schedule__text">В 2018 судно работало под чартером <a href="https://www.cma-cgm.com" title="Official site">CMA CGM</a>. Это большая (третья в мире) компания занимающаяся торговыми перевозками.Крайние точки маршрута: Дар Эс Салаам (Танзания) и Тайланд (Лаем Чабанг). По пути мы заходили на Шриланку (Коломбо), в Малайзию (Порт Келанг, Пелепас) и в Сингапур.</p>
-
-        <img src="img/voyage_img.jpg" alt="voyage track" class="schedule__img" width="563" height="232">
-
-        <p class="schedule__text">На обратном пути в Африку, заходили либо на Мальдивы (Мале), либо на Сейшелы (Порт Виктория). Подробнее узнать про маршрут, растояния, сроки доставки можно узнать на сайте перевозчика <a href="https://www.cma-cgm.com/products-services/line-services/flyer/ASEA" title="CMA CGM ASEA">CMA CGM Asea - Tanzania</a></p>
-      </div>
-
-
-      <!--<table class="table table-striped hidden">-->
-        <!--<thead>-->
-        <!--<tr>-->
+          <!--<table class="table table-striped hidden">-->
+          <!--<thead>-->
+          <!--<tr>-->
           <!--<th>&nbsp;</th>-->
           <!--<th>-->
-            <!--<span class="lang lang-ru">Порт</span>-->
-            <!--<span class="lang lang-en hidden">Port</span>-->
+          <!--<span class="lang lang-ru">Порт</span>-->
+          <!--<span class="lang lang-en hidden">Port</span>-->
           <!--</th>-->
           <!--<th>-->
-            <!--<span class="lang lang-ru">Страна</span>-->
-            <!--<span class="lang lang-en hidden">Country</span>-->
+          <!--<span class="lang lang-ru">Страна</span>-->
+          <!--<span class="lang lang-en hidden">Country</span>-->
           <!--</th>-->
           <!--<th>-->
-            <!--<span class="lang lang-ru">Заход</span>-->
-            <!--<span class="lang lang-en hidden">Arrival</span>-->
+          <!--<span class="lang lang-ru">Заход</span>-->
+          <!--<span class="lang lang-en hidden">Arrival</span>-->
           <!--</th>-->
           <!--<th>-->
-            <!--<span class="lang lang-ru">Отход</span>-->
-            <!--<span class="lang lang-en hidden">Departure</span>-->
+          <!--<span class="lang lang-ru">Отход</span>-->
+          <!--<span class="lang lang-en hidden">Departure</span>-->
           <!--</th>-->
-        <!--</tr>-->
-        <!--</thead>-->
+          <!--</tr>-->
+          <!--</thead>-->
 
-        <!--<tbody class="schedule-body">-->
-        <!--<tr>-->
+          <!--<tbody class="schedule-body">-->
+          <!--<tr>-->
           <!--<td>&nbsp;</td>-->
           <!--<td class="port">-->
-            <!--<span class="lang lang-ru">Дар Эс Салаам</span>-->
-            <!--<span class="lang lang-en hidden">Dar Es Salaam</span>-->
+          <!--<span class="lang lang-ru">Дар Эс Салаам</span>-->
+          <!--<span class="lang lang-en hidden">Dar Es Salaam</span>-->
           <!--</td>-->
           <!--<td class="country">-->
-            <!--<span class="lang lang-ru">Танзания</span>-->
-            <!--<span class="lang lang-en hidden">Tanzania</span>-->
+          <!--<span class="lang lang-ru">Танзания</span>-->
+          <!--<span class="lang lang-en hidden">Tanzania</span>-->
           <!--</td>-->
           <!--<td class="arrival">-->
-            <!--<time datetime="2016-05-06">-->
-              <!--<span class="lang lang-ru">6 мая</span>-->
-              <!--<span class="lang lang-en hidden">6 of May</span>-->
-            <!--</time>-->
+          <!--<time datetime="2016-05-06">-->
+          <!--<span class="lang lang-ru">6 мая</span>-->
+          <!--<span class="lang lang-en hidden">6 of May</span>-->
+          <!--</time>-->
           <!--</td>-->
           <!--<td class="departure">-->
-            <!--<time datetime="2016-05-10">-->
-              <!--<span class="lang lang-ru">10 Мая</span>-->
-              <!--<span class="lang lang-en hidden">10 of May</span>-->
-            <!--</time>-->
+          <!--<time datetime="2016-05-10">-->
+          <!--<span class="lang lang-ru">10 Мая</span>-->
+          <!--<span class="lang lang-en hidden">10 of May</span>-->
+          <!--</time>-->
           <!--</td>-->
-        <!--</tr>-->
+          <!--</tr>-->
 
-        <!--<tr>-->
+          <!--<tr>-->
           <!--<td>&nbsp;</td>-->
           <!--<td class="port">-->
-            <!--<span class="lang lang-ru">Коломбо</span>-->
-            <!--<span class="lang lang-en hidden">Colombo</span>-->
+          <!--<span class="lang lang-ru">Коломбо</span>-->
+          <!--<span class="lang lang-en hidden">Colombo</span>-->
           <!--</td>-->
           <!--<td class="country">-->
-            <!--<span class="lang lang-ru">Шри Ланка</span>-->
-            <!--<span class="lang lang-en hidden">Shri Lanka</span>-->
+          <!--<span class="lang lang-ru">Шри Ланка</span>-->
+          <!--<span class="lang lang-en hidden">Shri Lanka</span>-->
           <!--</td>-->
           <!--<td class="arrival">-->
-            <!--<time datetime="2016-05-21">-->
-              <!--<span class="lang lang-ru">21 Мая</span>-->
-              <!--<span class="lang lang-en hidden">21 of May</span>-->
-            <!--</time>-->
+          <!--<time datetime="2016-05-21">-->
+          <!--<span class="lang lang-ru">21 Мая</span>-->
+          <!--<span class="lang lang-en hidden">21 of May</span>-->
+          <!--</time>-->
           <!--</td>-->
           <!--<td class="departure">-->
-            <!--<time datetime="2017-05-22">-->
-              <!--<span class="lang lang-ru">22 Мая</span>-->
-              <!--<span class="lang lang-en hidden">22 of May</span>-->
-            <!--</time>-->
+          <!--<time datetime="2017-05-22">-->
+          <!--<span class="lang lang-ru">22 Мая</span>-->
+          <!--<span class="lang lang-en hidden">22 of May</span>-->
+          <!--</time>-->
           <!--</td>-->
-        <!--</tr>-->
-        <!--</tbody>-->
-      <!--</table>-->
+          <!--</tr>-->
+          <!--</tbody>-->
+          <!--</table>-->
+        </div>
 
+        <a
+          href="index.html"
+          class="blogpost__home-btn  blogpost__home-btn--miami btn "
+        >
+          <span class="lang lang-ru">На главную</span>
+          <span class="lang lang-en hidden">Home</span>
+        </a>
+      </main>
 
+      <footer class="footer">
+        <p class="footer__produced">
+          <a
+            href="https://web.facebook.com/profile.php?id=100001634533512"
+            title="facebook"
+          >
+            <span class="lang lang-ru">Ермолин Владислав</span>
+            <span class="lang lang-en hidden">Yermolin Vlad</span> </a
+          >, 2019.
+        </p>
+        <p class="footer__mail">
+          Email:
+          <a href="mailto:electrovladyslav@gmail.com"
+            >electrovladyslav@gmail.com</a
+          >.
+        </p>
+      </footer>
     </div>
-
-    <a href="index.html" class="blogpost__home-btn  blogpost__home-btn--miami btn ">
-      <span class="lang lang-ru">На главную</span>
-      <span class="lang lang-en hidden">Home</span>
-    </a>
-  </main>
-
-
-  <footer class="footer">
-    <p class="footer__produced">
-      <a href="https://web.facebook.com/profile.php?id=100001634533512" title="facebook">
-        <span class="lang lang-ru">Ермолин Владислав</span>
-        <span class="lang lang-en hidden">Yermolin Vlad</span>
-      </a>, 2019.</p>
-    <p class="footer__mail">Email: <a href="mailto:electrovladyslav@gmail.com">electrovladyslav@gmail.com</a>.</p>
-  </footer>
-</div>
-
-</body>
+  </body>
 </html>

@@ -8,13 +8,17 @@
 }
 
 .blogpost-preview__picture {
+  display: block;
   width: 680px;
   height: 680px;
+  overflow: hidden;
 }
 
 .blogpost-preview__img {
   width: 100%;
   height: 100%;
+
+  @include animation-enlarge-on-hover();
 }
 
 .blogpost-preview__body {

@@ -216,7 +216,7 @@ select:active {
 
 .map {
   min-height: 350px;
-  background-color: #2b79b7; }
+  background-color: #060847; }
 
 .map__definition {
   display: -ms-flexbox;
@@ -359,12 +359,17 @@ select:active {
   background-color: #f9f9f9; }
 
 .blogpost-preview__picture {
+  display: block;
   width: 680px;
-  height: 680px; }
+  height: 680px;
+  overflow: hidden; }
 
 .blogpost-preview__img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  transition: transform 0.5s ease; }
+  .blogpost-preview__img:hover {
+    transform: scale(1.1); }
 
 .blogpost-preview__body {
   display: -ms-flexbox;
