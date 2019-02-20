@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
     <meta property="og:image" content="img/og-back-way.jpg" />
+    <meta property="og:title" content="Электровлада блогосайт" />
     <meta name="description" content="Влада блог" />
     <title>Electrovlad's Blog</title>
     <link rel="stylesheet" href="css/style.min.css" type="text/css" />
@@ -70,6 +71,30 @@
                 позиция судна на карте отличается от реальной.
               </span>
             </p>
+
+            <!-- <canvas
+              id="canvas_tt5c6cdfe8aaf84"
+              width="175"
+              height="175"
+            ></canvas>
+
+                  <a
+                    href="//24timezones.com/ru_vremia/kuala_lumpur_mestnoe_vremia.php"
+                    style="text-decoration: none"
+                    class="clock24"
+                    id="tz24-1550639080-c1122-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IjAwOTlGRiIsImxhbmciOiJydSIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NWM2Y2RmZThhYWY4NCJ9"
+                    title="время Куала-Лумпур"
+                    target="_blank"
+                    rel="nofollow"
+                    >Текущее время в Куале-Лумпуру</a
+                  >
+
+
+            <script
+              type="text/javascript"
+              src="//w.24timezones.com/l.js"
+              async
+            ></script>-->
           </div>
         </div>
 
@@ -82,8 +107,8 @@
             shownames = "false"; // to display ship names on the map (true or false)
             // latitude='37.4460';	// the latitude of the center of the map, in decimal degrees
             // longitude='24.9467';	// the longitude of the center of the map, in decimal degrees
-            zoom = "17"; // the zoom level of the map (values between 2 and 17)
-            maptype = "1"; // use 0 for Normal Map, 1 for Satellite, 2 for OpenStreetMap
+            zoom = "2"; // the zoom level of the map (values between 2 and 17)
+            maptype = "0"; // use 0 for Normal Map, 1 for Satellite, 2 for OpenStreetMap
             trackvessel = "248555000"; // MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
             fleet = "kalamotitrader@gmail.com"; // the registered email address of a user-defined fleet (user's default fleet is used)
           </script>
@@ -100,17 +125,19 @@
           </h2>
 
           <article class="blogpost-preview">
-            <picture class="blogpost-preview__picture">
-              <source
-                media="(min-width: 1180px)"
-                srcset="img/blogpost_preview_miami_trader_cutted.jpg"
-              />
-              <img
-                src="img/blogpost_preview_miami_trader_cutted_mobile.jpg"
-                class="blogpost-preview__img blogpost__img--main"
-                alt="Miami"
-              />
-            </picture>
+            <a href="blog-miami.html">
+              <picture class="blogpost-preview__picture">
+                <source
+                  media="(min-width: 1180px)"
+                  srcset="img/blogpost_preview_miami_trader_cutted.jpg"
+                />
+                <img
+                  src="img/blogpost_preview_miami_trader_cutted_mobile.jpg"
+                  class="blogpost-preview__img blogpost__img--miami"
+                  alt="Miami"
+                />
+              </picture>
+            </a>
             <div class="blogpost-preview__body">
               <div class="blogpost-preview__date">
                 <span class="lang lang-ru">25 Января 2019</span>
@@ -129,17 +156,19 @@
 
           <article class="blogpost-preview">
             <div class="blogpost-preview__picture">
-              <picture>
-                <source
-                  media="(min-width: 1180px)"
-                  srcset="img/blogpost_preview_fixiks_cutted.jpg"
-                />
-                <img
-                  src="img/blogpost_preview_fixiks_cutted_mobile.jpg"
-                  class="blogpost-preview__img blogpost__img--main"
-                  alt="Fixiks"
-                />
-              </picture>
+              <a href="blog-fixiks.html">
+                <picture>
+                  <source
+                    media="(min-width: 1180px)"
+                    srcset="img/blogpost_preview_fixiks_cutted.jpg"
+                  />
+                  <img
+                    src="img/blogpost_preview_fixiks_cutted_mobile.jpg"
+                    class="blogpost-preview__img blogpost__img--main"
+                    alt="Fixiks"
+                  />
+                </picture>
+              </a>
             </div>
             <div class="blogpost-preview__body">
               <div class="blogpost-preview__date">
